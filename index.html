@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>PanasCoop</title>
   </head>
   <body>
 
     <script type="module" src="/main.js"></script>
 
-    <h1>Entrada de la web</h1>
+    
     <div class="flex flex-col h-screen">
       <!-- Barra Superior -->
-      <header class="bg-gray-100 p-4 flex items-center justify-between shadow">
+      <header class="bg-blueclear p-4 flex items-center justify-between shadow">
           <div class="flex items-center">
-              <img src="ruta/a/tu/logo.png" alt="Logo" class="h-8">
+              <img src="public\imagenes\image.png" alt="Logo" class="h-8">
               <nav class="ml-6 flex space-x-4">
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Pedidos</a>
+                  <a href="#" class="text-darkblue-900 hover:text-blue-600">Pedidos</a>
                   <a href="#" class="text-gray-600 hover:text-blue-600">Entregas</a>
                   <a href="#" class="text-gray-600 hover:text-blue-600">Negocios</a>
                   <a href="#" class="text-gray-600 hover:text-blue-600">Usuarios</a>
@@ -25,9 +25,31 @@
               </nav>
           </div>
           <div class="flex items-center space-x-4">
+            <!-- Selector de Fecha -->
+            <input type="date" class="border rounded p-2">
+            
+            <!-- Botones de Importar y Exportar -->
+            <button class="text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v12m0-12 3.6 3.6M8.4 12.6 12 9M3 5h18" />
+                </svg> Exportar
+            </button>
+            
+        
+            
+     <!-- Iconos de Importar y Exportar -->
+     <button class="text-gray-600 hover:text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 12-3.6-3.6m7.2 0L12 15M3 19h18" />
+        </svg>
+    Importar </button>
+         
+            
+           
+          <div class="flex items-center space-x-4">
               <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
               <button class="bg-dark-blue-600-" text-white px-4 py-2 rounded>Administración</button>
-              <img src="ruta/a/tu/avatar.png" alt="Avatar" class="h-8 w-8 rounded-full">
+              <img src="public\imagenes\icono.png" alt="Avatar" class="h-8 w-8 rounded-full">
           </div>
       </header>
   
@@ -49,11 +71,11 @@
                   </div>
               </div>
           </aside>
-  <h1> el que lo lea me debe mil</h1> 
+ 
           <!-- Mapa -->
           <main class="flex-1 p-4">
               <div class="h-full w-full">
-                  <img src="ruta/a/tu/mapa.png" alt="Mapa" class="h-full w-full object-cover rounded">
+                  <img src="public\imagenes\mapa.png" alt="Mapa" class="h-full w-full object-cover rounded">
               </div>
           </main>
       </div>
