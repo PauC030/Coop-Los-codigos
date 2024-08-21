@@ -4,59 +4,89 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>PanasCoop</title>
   </head>
   <body>
-
-
-
     <div class="flex flex-col h-screen">
       <!-- Barra Superior -->
-      <header class="bg-gray-100 p-4 flex items-center justify-between shadow">
+        <header class="bg-bluecielo p-4 flex items-center justify-between shadow">
           <div class="flex items-center">
-              <img src="ruta/a/tu/logo.png" alt="Logo" class="h-8">
+            <img src="public\imagenes\image.png" alt="Logo" class="h-8">
               <nav class="ml-6 flex space-x-4">
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Pedidos</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Entregas</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Negocios</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Usuarios</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Configuraciones</a>
+                  <a href="#" class="text-darkblue hover:text-blueclear">Pedidos</a>
+                  <a href="#" class="text-darkblue hover:text-blueclear">Entregas</a>
+                  <a href="#" class="text-darkblue hover:text-blueclear">Negocios</a>
+                  <a href="#" class="text-darkblue hover:text-blueclear">Usuarios</a>
+                  <a href="#" class="text-darkblue hover:text-blueclear">Configuraciones</a>
               </nav>
-          </div>
+           </div>
           <div class="flex items-center space-x-4">
-              <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
-              <button class="bg-dark-blue-600-" text-white px-4 py-2 rounded>Administración</button>
-              <img src="ruta/a/tu/avatar.png" alt="Avatar" class="h-8 w-8 rounded-full">
+
+
+            <!-- Selector de Fecha -->
+            <input type="date" class="border rounded p-2">
+            
+            <!-- Icono de Exportar -->
+            <button class="text-gray-600 hover:text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v12m0-12 3.6 3.6M8.4 12.6 12 9M3 5h18" />
+            </svg> Exportar
+            </button>
+            
+            
+            <!-- Icono de Importar-->
+             <button class="text-gray-600 hover:text-green-600">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 12-3.6-3.6m7.2 0L12 15M3 19h18" />
+             </svg> Importar 
+             </button>
+         
+            
+           <!--ADMINISTRACION-->>
+          <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
+          <button class="bg-dark-blue-600-" text-white px-4 py-2 rounded>Administración</button>
+          <img src="public\imagenes\icono.png" alt="Avatar" class="h-8 w-8 rounded-full">
           </div>
-      </header>
+
+    </header>
   
-      <!-- Contenido Principal -->
-      <div class="flex flex-1">
-          <!-- Panel Izquierdo -->
-          <aside class="w-1/4 bg-white p-4 shadow">
+           <!-- Contenido Principal -->
+            <div class="flex flex-1">
+          <!-- lado Izquierdo -->
+              <aside class="w-1/4 bg-white p-4 shadow">
               <div class="mb-4">
                   <input type="text" placeholder="Buscar..." class="border rounded p-2 w-full">
               </div>
+
               <div>
-                  <div class="flex items-center space-x-2">
-                      <span class="text-sm text-gray-700">No asignado</span>
-                      <button class="bg-blue-600 text-white px-2 py-1 rounded text-xs">+</button>
-                  </div>
-                  <div class="mt-2 bg-gray-100 p-2 rounded shadow-inner">
-                      <p>Tarea #1</p>
-                      <p class="text-xs text-gray-500">plaza bolivar comuna 1 popayan cauca 12:00 am - 4:00 pm</p>
-                  </div>
+              <div class="flex items-center space-x-2">
+              <span class="text-sm text-black-700">No asignado</span>
+              <button class="bg-darkblue text-white px-2 py-1 rounded text-xs">+</button>
+              </div>
+
+
+              <div class="mt-2 bg-blue-300 p-2 rounded shadow-inner">
+               <p>Tarea #1</p>
+               <p class="text-light blue-500">plaza bolivar comuna 1 popayan cauca 12:00 am - 4:00 pm</p>
+              </div>
+
               </div>
           </aside>
-  
-          <!-- Mapa -->
-          <main class="flex-1 p-4">
+ 
+             <!-- Mapa -->
+            <main class="flex-1 p-4">
               <div class="h-full w-full">
-                  <img src="ruta/a/tu/mapa.png" alt="Mapa" class="h-full w-full object-cover rounded">
+               <img src="public\imagenes\mapa.png" alt="Mapa" class="h-full w-full object-cover rounded">
               </div>
-          </main>
+            </main>
+
+            
       </div>
   </div>
+
+
+  <script type="module" src="/main.js"></script>
   </body>
     <script type="module" src="/main.js"></script>
 </html>
