@@ -5,117 +5,149 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PanasCoop</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="flex flex-col h-screen">
-      <!-- Barra Superior -->
-        <header class="bg-bluecielo p-4 flex items-center justify-between shadow">
-          <div class="flex items-center">
-            <img src="public\imagenes\image.png" alt="Logo" class="h-8">
-              <nav class="ml-6 flex space-x-4">
-
-                  <img src="public\imagenes\pedidos.png" alt="Logo" class="h-6" >
-                  <a href="#" class="text-darkblue hover:text-blueclear ">Pedidos</a>
-
-                  <img src="public\imagenes\entregas.png" alt="Logo" class="h-6" >
-                  <a href="#" class="text-darkblue hover:text-blueclear">Entregas</a>
-
-                  <img src="public\imagenes\negocios.png" alt="Logo" class="h-6" >
-                  <a href="#" class="text-darkblue hover:text-blueclear">Negocios</a>
-
-                  <img src="public\imagenes\icono.png" alt="Logo" class="h-6"   x>
-                  <a href="#" class="text-darkblue hover:text-blueclear">Usuarios</a>
-
-                  <img src="public\imagenes\configuraciones.png" alt="Logo" class="h-6" >
-                  <a href="#" class="text-darkblue hover:text-blueclear">Configuraciones</a>
-              </nav>
-           </div>
+    <div class="flex flex-col h-screen border-r-2">
+    <!-- <div class="flex flex-col h-screen">
+      <! Barra Superior  
+      <header class="bg-bluecielo p-4 flex items-center justify-between shadow animate-fade-in"> --> 
+              <header class="bg-blueclear p-4 flex flex-col sm:flex-row items-center justify-between shadow animate-fade-in">
+                <div class="flex items-center">
+                  <img src="public/imagenes/image.png" alt="Logo" class="h-8">
+                  <nav class="ml-6 flex flex-wrap space-x-4">
 
 
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/pedidos.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Pedidos</a>
+                    </div>
 
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/entregas.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
+                    </div>
 
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/negocios.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Negocios</a>
+                    </div>
 
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/Usuario.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Usuarios</a>
+                    </div>
 
-
-            
-           <!--ADMINISTRACION-->
-          <div class="flex items-center space-x-4">
-          
-          <button class="bg-dark-blue-600-" text-white px-4 py-2 rounded>Administración</button>
-          <img src="public\imagenes\icono.png" alt="Avatar" class="h-8 w-8 rounded-full">
-          </div>
-          
-
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/configuraciones.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Configuraciones</a>
+                    </div>
+            </nav>
+        </div>
+                 
+         <!-- ADMINISTRACION -->
+        <div class="flex items-center space-x-2 mt-2 sm:mt-1">
+          <button class="bg-dark-blue-600 text-black font-semibold px-4 py-2 rounded">Administración</button>
+          <img src="public/imagenes/Usuario.png" alt="Avatar" class="h-8 w-8 rounded-full ">
+        </div>
     </header>
 
-    <div class="grid grid-cols-5 gap-10 p-4">
-
-             
+       <div class="p-4 flex flex-col sm:flex-row items-center justify-between bg-bluecielo ">  
                   <!-- Selector de Fecha -->
-                   <div class="flex justify-start flex-between">
-            <input type="date" class="border rounded p-2 ">
-
-                   </div>
+                 <div class="flex justify-start flex-between">
+                   <input type="date" class="border rounded p-2 ">
+                 </div>
 
            
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 gap-1  ">
             <!-- Icono de Exportar -->
-            <button class="text-darkblue hover:text-blueclear">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v12m0-12 3.6 3.6M8.4 12.6 12 9M3 5h18" />
-            </svg> Exportar
-            </button>
+            <div class="group flex items-center font-semibold">
+            <img src="public/imagenes/exportar.png" alt="Logo" class="h-6">
+            <a href="#" class="text-darkblue hover:text-lightblue relative ">Exportar</a>
+            </div>
             
             
             <!-- Icono de Importar-->
-             <button class="text-darkblue hover:text-blueclear">
-             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-             <path stroke-linecap="round" stroke-linejoin="round" d="M12 15V3m0 12-3.6-3.6m7.2 0L12 15M3 19h18" />
-             </svg> Importar 
-             </button>
+             <div class="group flex items-center font-semibold "> 
+              <img src="public/imagenes/importar.png" alt="Logo" class="h-6">
+              <a href="#" class="text-darkblue hover:text-lightblue relative ">Importar</a>
+             </div>
               </div>
 
               <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
 
 
-<div class="flex justify-start flex-betweet" >
-<img src="public\imagenes\filtro.png" alt="Logo" class="h-6" >
-                  <a href="#" class="text-darkblue hover:text-blueclear">Filtros</a>
-</div>
+               <div class="  flex items-center space-x-1 font-semibold" >
+                 <img src="public\imagenes\filtro.png" alt="Logo" class="h-6" >
+                 <a href="#" class="text-darkblue hover:text-lightblue">Filtros</a>
+               </div>
+
+
+               <div class="flex items-center space-x-1 font-semibold" >
+                <img src="public\imagenes\configuraciones.png" alt="Logo" class="h-6" >
+                <a href="#" class="text-darkblue hover:text-lightblue ">Configuración</a>
+              </div>
+
+              <div class="flex items-center" >
+                <p id="parrafo" class="text-darkblue hover:text-lightblue text-4xl "> PanasCoop </p>
+              </div>
              
-
-         
-    </div>
+            
+      </div>
   
-           <!-- Contenido Principal -->
-            <div class="flex flex-1">
+           <!-- Contenido Principal  -->
+            <div class="flex flex-1"> 
           <!-- lado Izquierdo -->
-              <aside class="w-1/4 bg-white p-4 shadow ">
-              <div class="mb-4  ">
-                  <input type="text" placeholder="Buscar..." class="border rounded p-2 w-full">
-              </div>
+             <aside class="w-1/4 bg-white p-4 shadow ">
 
-              <div>
-              <div class="flex items-center space-x-2">
-              <span class="text-sm text-black-700">No asignado</span>
-              <button class="bg-darkblue text-white px-2 py-1 rounded text-xs">+</button>
-              </div>
+          <!--INPUT BUSCAR-->
+              
+                <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"></label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </div>
+                    <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500
+                     dark:bg-bluecielo dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Buscar" required />
+                    
+                </div>
+              
+              
+            <br>
+            <div>
+              <div class="flex justify-between items-center space-x-2 bg-lightblue">
+               <span class=" text-black-700 font-semibold text-1xl">No asignado</span>
+              <button class="bg-darkblue text-white px-2 py-1 rounded text-xs "> + </button>
+            </div>
 
 
-              <div class="mt-2 bg-blueclear p-2 rounded shadow-inner scroll-m-8">
-               <p>Tarea #1</p>
-               <p class="text-light blue-500">plaza bolivar comuna 1 popayan cauca 12:00 am - 4:00 pm</p>
-              </div>
-              </div>
-          </aside>
- 
+            <div class="mt-2 bg-blueclear p-2 rounded shadow-inner scroll-m-8">
+               <p class="text-1xl font-semibold">Tarea #1</p>
+               <p class="text-light blue-500  text-">plaza bolivar comuna 1 popayan cauca 12:00 am - 4:00 pm</p>
+            </div>
+          </div>
+         </aside> 
+
+          <!-- Contenido Principal -->
+          <!-- <div class="grid grid-cols-2 md:grid-cols-2 gap-10 p-5">
+           <aside class="w-full md:w-1/4 bg-white p-4 shadow overflow-auto">  no borrar -->
+   
+
+
+
              <!-- Mapa -->
             <main class="flex-1 p-4">
               <div class="h-full w-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15944.358611131536!2d-76.5591552!3d2.4772608000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1724249238338!5m2!1ses-419!2sco" width="1500" height="769" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15944.358611131536!2d-76.5591552!3d2.4772608000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1724249238338!5m2!1ses-419!2sco" 
+                width="1200" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
               </div>
-            </main>
+            </main> 
 
+           <!-- <main class=" col-span-0">  no borrar-->
+          
 
       </div>
   </div> 
