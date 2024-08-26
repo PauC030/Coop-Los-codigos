@@ -13,20 +13,44 @@
   <nav class="bg-gray-100 p-2 shadow-sm">
       <div class="flex items-center justify-between">
           <!-- Left Section: Logo and Navigation -->
-          <div class="flex items-center space-x-4">
-              <img src="logo.png" alt="Logo" class="w-8 h-8">
-              <span class="text-gray-600 font-semibold">Panel de administrador</span>
-              <a href="#" class="text-gray-600 hover:text-gray-800">Pedidos</a>
-              <a href="#" class="text-gray-600 hover:text-gray-800">Entregas</a>
-              <a href="#" class="text-gray-600 hover:text-gray-800">Negocios</a>
-              <a href="#" class="text-gray-600 hover:text-gray-800">Usuarios</a>
-              <a href="#" class="text-gray-600 hover:text-gray-800">Configuraciones</a>
-              <a href="#" class="text-gray-600 hover:text-gray-800">Cuenta</a>
-          </div>
+          <div class="flex items-center">
+            <img src="public\imagenes\image.png" alt="Logo" class="h-8">
+              <nav class="ml-6 flex space-x-4">
+
+                  <img src="public\imagenes\pedidos.png" alt="Logo" class="h-6" >
+                  <a href="#" class="text-darkblue hover:text-blueclear ">Pedidos</a>
+
+                  <img src="public\imagenes\entregas.png" alt="Logo" class="h-6" >
+                  <a href="#" class="text-darkblue hover:text-blueclear">Entregas</a>
+
+                  <img src="public\imagenes\negocios.png" alt="Logo" class="h-6" >
+                  <a href="#" class="text-darkblue hover:text-blueclear">Negocios</a>
+
+                  <img src="public\imagenes\icono.png" alt="Logo" class="h-6" >
+                  <a href="#" class="text-darkblue hover:text-blueclear">Usuarios</a>
+
+                  <img src="public\imagenes\configuraciones.png" alt="Logo" class="h-6" >
+                  <a href="#" class="text-darkblue hover:text-blueclear">Configuraciones</a>
+
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Cuenta</a>
+
+                  <div class="flex items-center space-x-2">
+                    <span class="text-gray-600">Administración</span>
+                    <span class="bg-purple-500 text-white px-2 py-1 rounded-full">99+</span>
+
+                    <img src="profile.png" alt="Profile" class="w-8 h-8 rounded-full">
+                </div>
+              </nav>
+           </div>
+            
   
           <!-- Right Section: Search and Profile -->
           <div class="flex items-center space-x-4">
+
+
               <button class="bg-gray-200 text-gray-600 px-2 py-1 rounded-lg">Ver pedidos cancelados</button>
+
+
               <div class="relative">
                   <input type="text" placeholder="Buscar pedidos" class="px-3 py-2 border border-gray-300 rounded-lg">
                   <button class="absolute right-2 top-2 text-gray-400">
@@ -35,12 +59,16 @@
                       </svg>
                   </button>
               </div>
-              <button class="bg-gray-200 text-gray-600 px-2 py-1 rounded-lg">Exportar</button>
-              <div class="flex items-center space-x-2">
-                  <span class="text-gray-600">Administración</span>
-                  <span class="bg-purple-500 text-white px-2 py-1 rounded-full">99+</span>
+              <div class="grid grid-cols-4 gap-4">
+                <!-- Icono de Exportar -->
+                <button class="text-darkblue hover:text-blueclear">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v12m0-12 3.6 3.6M8.4 12.6 12 9M3 5h18" />
+                </svg> Exportar
+                </button>
               </div>
-              <img src="profile.png" alt="Profile" class="w-8 h-8 rounded-full">
+             
+             
           </div>
       </div>
  
