@@ -8,45 +8,60 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="flex flex-col h-screen border-r-2">
-              <header class="bg-blueclear p-4 flex flex-col sm:flex-row items-center justify-between shadow animate-fade-in">
+    <div class="flex flex-col h-screen border-r-2 w-full">
+              <header class="bg-blueclear p-4 flex flex-col sm:flex-row items-center justify-between shadow animate-fade-in w-full">
                 <div class="flex items-center">
                   <img src="public/imagenes/image.png" alt="Logo" class="h-8">
                   <nav class="ml-6 flex flex-wrap space-x-4">
 
-
-                    <div class="group flex items-center space-x-1">
+                    <div class="hidden md:block"> 
+                      <div class="group flex items-center space-x-1 ">
                       <img src="public/imagenes/pedidos.png" alt="Logo" class="h-6">
                       <a href="pedidos.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Pedidos</a>
-                    </div>
+                    </div></div>
 
-                    <div class="group flex items-center space-x-1">
-                      <img src="public/imagenes/entregas.png" alt="Logo" class="h-6">
-                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
-                    </div>
 
-                    <div class="group flex items-center space-x-1">
-                      <img src="public/imagenes/negocios.png" alt="Logo" class="h-6">
-                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Negocios</a>
+                   
+                    <div class="hidden md:block">
+                      <div class="group flex items-center space-x-1 ">
+                        <img src="public/imagenes/entregas.png" alt="Logo" class="h-6">
+                        <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
+                      </div>
                     </div>
-
-                    <div class="group flex items-center space-x-1">
-                      <img src="public/imagenes/Usuario.png" alt="Logo" class="h-6">
-                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Usuarios</a>
+    
+                   
+                    <div class="hidden md:block">
+                      <div class="group flex items-center space-x-1 ">
+                        <img src="public/imagenes/negocios.png" alt="Logo" class="h-6">
+                        <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Negocios</a>
+                      </div>
                     </div>
-
-                    <div class="group flex items-center space-x-1">
-                      <img src="public/imagenes/configuraciones.png" alt="Logo" class="h-6">
-                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Configuraciones</a>
+                   
+                    <div class="hidden md:block">
+                      <div class="group flex items-center space-x-1 ">
+                        <img src="public/imagenes/Usuario.png" alt="Logo" class="h-6">
+                        <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Usuarios</a>
+                      </div>
                     </div>
+                    
+                    <div class="hidden md:block">
+                      <div class="group flex items-center space-x-1 ">
+                        <img src="public/imagenes/configuraciones.png" alt="Logo" class="h-6">
+                        <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Configuraciones</a>
+                      </div>
+                    </div>
+                    
             </nav>
         </div>
                  
          <!-- ADMINISTRACION -->
-        <div class="flex items-center space-x-2 mt-2 sm:mt-1">
-          <button class="bg-dark-blue-600 text-black font-semibold px-4 py-2 rounded">Administración</button>
-          <img src="public/imagenes/Usuario.png" alt="Avatar" class="h-8 w-8 rounded-full ">
-        </div>
+          <div class="hidden md:block">
+            <div class="flex items-center space-x-2 mt-2 sm:mt-1 k">
+              <button class="bg-dark-blue-600 text-black font-semibold px-4 py-2 rounded">Administración</button>
+              <img src="public/imagenes/Usuario.png" alt="Avatar" class="h-8 w-8 rounded-full ">
+            </div>
+          </div>
+       
     </header>
 
        <div class="p-4 flex flex-col sm:flex-row items-center justify-between bg-bluecielo ">  
