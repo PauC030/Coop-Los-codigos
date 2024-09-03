@@ -1,0 +1,99 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-white shadow-md p-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <img alt="Logo" class="h-10 w-10 mr-2" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-55CLjMJ1uPNcK86R0GAmH4U5.png?st=2024-09-01T20%3A04%3A37Z&se=2024-09-01T22%3A04%3A37Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-08-31T23%3A20%3A11Z&ske=2024-09-01T23%3A20%3A11Z&sks=b&skv=2024-08-04&sig=TBHYN8lbPQsmhBShhA2ejsHpvMz3xgrDAm%2BqxBB1sBs%3D" width="50"/>
+            <h1 class="text-xl font-bold">Panel de administrador</h1>
+        </div>
+        <div class="flex space-x-4">
+            <a class="text-gray-600 hover:text-black" href="#">Pedidos</a>
+            <a class="text-gray-600 hover:text-black" href="#">Entregas</a>
+            <a class="text-gray-600 hover:text-black" href="#">Negocios</a>
+            <a class="text-gray-600 hover:text-black" href="#">Usuarios</a>
+            <a class="text-gray-600 hover:text-black" href="#">Configuraciones</a>
+            <a class="text-gray-600 hover:text-black" href="#">Cuenta</a>
+            <a class="text-gray-600 hover:text-black" href="#">Administracion</a>
+        </div>
+        <div class="flex items-center space-x-2">
+            <span class="text-green-500 font-bold">99+</span>
+            <img alt="User Avatar" class="h-10 w-10 rounded-full" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-9Crx6OZqWlaLXDq059Y2FV70.png?st=2024-09-01T20%3A04%3A32Z&se=2024-09-01T22%3A04%3A32Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-08-31T23%3A46%3A07Z&ske=2024-09-01T23%3A46%3A07Z&sks=b&skv=2024-08-04&sig=LcUCHJZzF9CtEnkFhTIMl%2B3sagexfq6TSLwKRE6ycCE%3D" width="50"/>
+        </div>
+    </div>
+    <div class="bg-white shadow-md p-4 mt-4 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <button class="bg-gray-200 px-4 py-2 rounded" onclick="toggleOrders()">Ver pedidos cancelados</button>
+            <input class="border border-gray-300 rounded px-4 py-2" placeholder="Buscar pedidos" type="text" id="searchInput" onkeyup="searchOrders()"/>
+            <!-- Icono de Exportar -->
+            <div class="bg-blue-500 text-white px-4 py-2 rounded flex items-center space-x-2">
+                <img src="public/imagenes/exportar.png" alt="Logo" class="h-6">
+                <a href="#" class="text-darkblue hover:text-lightblue relative ">Exportar</a>
+                </div>
+        </div>
+    </div>
+    <div class="bg-white shadow-md p-4 mt-4">
+        <table class="w-full text-center" id="ordersTable">
+            <thead>
+                <tr class="border-b">
+                    <th class="py-2">#</th>
+                    <th class="py-2">Cliente</th>
+                    <th class="py-2">Estado</th>
+                    <th class="py-2">Resumen</th>
+                    <th class="py-2">Total</th>
+                    <th class="py-2">Factura</th>
+                    <th class="py-2">Hora de entrega</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b">
+                    <td class="py-2"># 9C9</td>
+                    <td class="py-2">celia cruz</td>
+                    <td class="py-2"><span class="bg-green-500 text-white px-2 py-1 rounded">Entregado</span></td>
+                    <td class="py-2">Entregar al restaurante el Rincon</td>
+                    <td class="py-2">46.000 COP</td>
+                    <td class="py-2"><i class="fas fa-file-invoice"></i></td>
+                    <td class="py-2">14/08/2024 12:00 - 17:19</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2"># M78</td>
+                    <td class="py-2">camilo torres</td>
+                    <td class="py-2"><span class="bg-red-500 text-white px-2 py-1 rounded">Rechazado</span></td>
+                    <td class="py-2">Entregar al restaurante el Fusion</td>
+                    <td class="py-2">77.000 COP</td>
+                    <td class="py-2"><i class="fas fa-file-invoice"></i></td>
+                    <td class="py-2">14/08/2024 01:00 - 16:10</td>
+                </tr>
+                <tr class="border-b">
+                    <td class="py-2"># 4JD</td>
+                    <td class="py-2">rodrigo perez</td>
+                    <td class="py-2"><span class="bg-green-500 text-white px-2 py-1 rounded">Entregado</span></td>
+                    <td class="py-2">Entregar al restaurante gourmet</td>
+                    <td class="py-2">22.000 COP</td>
+                    <td class="py-2"><i class="fas fa-file-invoice"></i></td>
+                    <td class="py-2">14/08/2024 12:00 - 14:10</td>
+                </tr>
+                <tr>
+                    <td class="py-2"># HJ8</td>
+                    <td class="py-2">sergio caro</td>
+                    <td class="py-2"><span class="bg-green-500 text-white px-2 py-1 rounded">Entregado</span></td>
+                    <td class="py-2">Entregar al restaurante Delicias</td>
+                    <td class="py-2">12.000 COP</td>
+                    <td class="py-2"><i class="fas fa-file-invoice"></i></td>
+                    <td class="py-2">14/08/2024 14:00 - 18:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="Pedidos.js"></script>
+    </body>
+    </html>

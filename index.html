@@ -4,59 +4,178 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>PanasCoop</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="flex flex-col h-screen border-r-2">
+              <header class="bg-blueclear p-4 flex flex-col sm:flex-row items-center justify-between shadow animate-fade-in">
+                <div class="flex items-center">
+                  <img src="public/imagenes/image.png" alt="Logo" class="h-8">
+                  <nav class="ml-6 flex flex-wrap space-x-4">
 
-    <script type="module" src="/main.js"></script>
 
-    <h1>Entrada de la web</h1>
-    <div class="flex flex-col h-screen">
-      <!-- Barra Superior -->
-      <header class="bg-gray-100 p-4 flex items-center justify-between shadow">
-          <div class="flex items-center">
-              <img src="ruta/a/tu/logo.png" alt="Logo" class="h-8">
-              <nav class="ml-6 flex space-x-4">
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Pedidos</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Entregas</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Negocios</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Usuarios</a>
-                  <a href="#" class="text-gray-600 hover:text-blue-600">Configuraciones</a>
-              </nav>
-          </div>
-          <div class="flex items-center space-x-4">
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/pedidos.png" alt="Logo" class="h-6">
+                      <a href="pedidos.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Pedidos</a>
+                    </div>
+
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/entregas.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
+                    </div>
+
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/negocios.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Negocios</a>
+                    </div>
+
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/Usuario.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Usuarios</a>
+                    </div>
+
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/configuraciones.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Configuraciones</a>
+                    </div>
+            </nav>
+        </div>
+                 
+         <!-- ADMINISTRACION -->
+        <div class="flex items-center space-x-2 mt-2 sm:mt-1">
+          <button class="bg-dark-blue-600 text-black font-semibold px-4 py-2 rounded">Administración</button>
+          <img src="public/imagenes/Usuario.png" alt="Avatar" class="h-8 w-8 rounded-full ">
+        </div>
+    </header>
+
+       <div class="p-4 flex flex-col sm:flex-row items-center justify-between bg-bluecielo ">  
+                  <!-- Selector de Fecha -->
+                 <div class="flex justify-start flex-between">
+                   <input type="date" class="border rounded p-2 ">
+                 </div>
+
+           
+            <div class="grid grid-cols-2 gap-1  ">
+            <!-- Icono de Exportar -->
+            <div class="group flex items-center font-semibold">
+            <img src="public/imagenes/exportar.png" alt="Logo" class="h-6">
+            <a href="#" class="text-darkblue hover:text-lightblue relative ">Exportar</a>
+            </div>
+            
+            
+            <!-- Icono de Importar-->
+             <div class="group flex items-center font-semibold "> 
+              <img src="public/imagenes/importar.png" alt="Logo" class="h-6">
+              <a href="#" class="text-darkblue hover:text-lightblue relative ">Importar</a>
+             </div>
+              </div>
+              
+              <!--BUSCADOR DE FECHA Toca organizar el diseño del input-->
               <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
-              <button class="bg-dark-blue-600-" text-white px-4 py-2 rounded>Administración</button>
-              <img src="ruta/a/tu/avatar.png" alt="Avatar" class="h-8 w-8 rounded-full">
-          </div>
-      </header>
-  
-      <!-- Contenido Principal -->
-      <div class="flex flex-1">
-          <!-- Panel Izquierdo -->
-          <aside class="w-1/4 bg-white p-4 shadow">
-              <div class="mb-4">
-                  <input type="text" placeholder="Buscar..." class="border rounded p-2 w-full">
+
+
+               <div class="  flex items-center space-x-1 font-semibold" >
+                 <img src="public\imagenes\filtro.png" alt="Logo" class="h-6" >
+                 <a href="#" class="text-darkblue hover:text-lightblue">Filtros</a>
+               </div>
+
+
+               <div class="flex items-center space-x-1 font-semibold" >
+                <img src="public\imagenes\configuraciones.png" alt="Logo" class="h-6" >
+                <a href="#" class="text-darkblue hover:text-lightblue ">Configuración</a>
               </div>
-              <div>
-                  <div class="flex items-center space-x-2">
-                      <span class="text-sm text-gray-700">No asignado</span>
-                      <button class="bg-blue-600 text-white px-2 py-1 rounded text-xs">+</button>
-                  </div>
-                  <div class="mt-2 bg-gray-100 p-2 rounded shadow-inner">
-                      <p>Tarea #1</p>
-                      <p class="text-xs text-gray-500">plaza bolivar comuna 1 popayan cauca 12:00 am - 4:00 pm</p>
-                  </div>
-              </div>
-          </aside>
-  
-          <!-- Mapa -->
-          <main class="flex-1 p-4">
-              <div class="h-full w-full">
-                  <img src="ruta/a/tu/mapa.png" alt="Mapa" class="h-full w-full object-cover rounded">
-              </div>
-          </main>
+
+              <div class="flex items-center" >
+                <p id="parrafo" class="text-darkblue hover:text-lightblue text-4xl "> PanasCoop </p>
+              </div> 
       </div>
-  </div>
+  
+          
+         <!-- Contenido Principal  -->
+
+
+              <div class="flex flex-1"> 
+              <!-- lado Izquierdo -->
+             <div class="max-w-xs mx-auto text-darkblue rounded-md shadow-lg">
+            
+             <!-- Header with Icons -->
+             <div class="p-3 flex items-center justify-between  bg-blue-200">
+             <p class="font-bold">No asignado</p>
+             <div class="flex space-x-2">
+             <div class="flex items-center space-x-1 font-semibold" >
+             <img src="public\imagenes\reloj.png" alt="Logo" class="h-4" >
+             <a href="#" class="text-darkblue hover:text-lightblue "> </a>
+             </div>
+
+            <div class="flex items-center space-x-1 font-semibold" >
+             <img src="public\imagenes\mas.png" alt="Logo" class="h-4" >
+              <a href="#" class="text-darkblue hover:text-lightblue "> </a>
+            </div>
+
+           <div class="flex items-center space-x-1 font-semibold" >
+            <img src="public\imagenes\menu.png" alt="Logo" class="h-4" >
+           <a href="#" class="text-darkblue hover:text-lightblue "> </a>
+           </div>
+           </div>
+          </div>
+
+          <br>
+
+            <!-- Buscador -->
+            <div class="px-3 pb-3 ">
+              <input type="text" placeholder="Seleccione una etiqueta, una plaza de mercado..." class= "w-full text-black p-2 rounded-md border-solid border-2 ">
+              <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
+
+            </div>
+          
+            <!-- Lista -->
+            <div class="bg-white text-black rounded-md shadow-inner mx-3 mb-3 p-3">
+              <div class="border p-2 rounded-md">
+                <p class="font-bold">Tarea #1</p>
+                <p>plaza bolivar</p>
+                <p>comuna 1 popayan cauca</p>
+                <p>12:00 am - 4:00 pm</p>
+              </div>
+            </div>
+          
+            <!-- Footer with Icon and Profile -->
+            <div class="p-3 flex items-center justify-between bg-blue-200">
+              <p class="font-bold">No asignado</p>
+              <div class="flex items-center space-x-1 font-semibold" >
+                <img src="public\imagenes\mas.png" alt="Logo" class="h-4" >
+                <a href="#" class="text-darkblue hover:text-lightblue "> </a>
+              </div>
+            </div>
+          
+            <!-- Profile Section -->
+            <div class="bg-white text-black rounded-md mx-3 p-2">
+              <div class="flex items-center">
+                <span class="bg-purple-600 text-white rounded-full px-2 py-1">AD</span>
+                <p class="ml-3">Administracion</p>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+             <!-- Mapa -->
+            <main class="flex-1 p-4">
+              <div class="h-full w-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15944.358611131536!2d-76.5591552!3d2.4772608000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1724249238338!5m2!1ses-419!2sco" 
+                width="1200" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+              </div>
+            </main> 
+
+           <!-- <main class=" col-span-0">  no borrar-->
+          <p>hola   r</p>
+
+      </div>
+  </div> 
+
+
+  <script type="module" src="/main.js"></script>
   </body>
 </html>

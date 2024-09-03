@@ -7,9 +7,12 @@ export default {
   theme: {
     extend: {
       colors:{
-       "dark-blue": "005EA2",
-       "light blue": "0B8CE8",
-       "light green": "A1BACA",
+       "darkblue": "#005EA2",
+       "lightblue": "#0B8CE8",
+       "blueclear": "#A1BACA",
+       "bluecielo": "#DCE9F1",
+       "azulclaro": "##EBF7FF"
+        
 
       }
     },
