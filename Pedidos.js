@@ -32,3 +32,14 @@ function searchOrders() {
     });
 }
 /*Pedidos*/
+   
+
+     function toggleModal() {
+      const modal = document.getElementById('exportModal');
+      modal.classList.toggle('hidden');
+    }
+    // Mostrar el modal
+    document.getElementById('exportModal').classList.remove('hidden');
+
+    // Ocultar el modal
+    document.getElementById('exportModal').classList.add('hidden');
