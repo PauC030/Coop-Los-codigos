@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="imagen" href="image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panel Administrador</title>
     <script src="https://cdn.tailwindcss.com"></script>
     </head>
 <body>
@@ -51,7 +50,10 @@
             <button class="bg-gray-200 px-4 py-2 rounded" onclick="toggleOrders()">Ver pedidos cancelados</button>
             <input class="border border-gray-300 rounded px-4 py-2" placeholder="Buscar pedidos" type="text" id="searchInput" onkeyup="searchOrders()"/>
             <!-- Icono de Exportar -->
-             <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="toggleModal()">Exportar</button>
+            <div class="bg-blue-500 text-white px-4 py-2 rounded flex items-center space-x-2">
+                <img src="public/imagenes/exportar.png" alt="Logo" class="h-6">
+                <button class="text-darkblue hover:text-lightblue relative" onclick="toggleModal()">Exportar</button>
+                </div>
         </div>
     </div>
     <div class="bg-white shadow-md p-4 mt-4">
@@ -128,7 +130,8 @@
     </div>
    </div>
   </div>
-  <!--Celendario-->
+  <!--Calendario-->
+  <!--Exportar-->
     
     <script src="Pedidos.js"></script>
     </body>
