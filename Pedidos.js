@@ -32,3 +32,9 @@ function searchOrders() {
     });
 }
 /*Pedidos*/
+   
+
+     function toggleModal() {
+      const modal = document.getElementById('exportModal');
+      modal.classList.toggle('hidden');
+    }
