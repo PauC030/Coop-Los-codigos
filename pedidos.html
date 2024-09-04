@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Administrador</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    
     </head>
 <body>
    
@@ -47,7 +49,7 @@
     </div>
     <div class="bg-white shadow-md p-4 mt-4 flex items-center justify-between">
         <div class="flex items-center space-x-4">
-            <button class="bg-gray-200 px-4 py-2 rounded" onclick="toggleOrders()">Ver pedidos cancelados</button>
+            <button class="bg-gray-200 px-4 py-2 rounded" id="filterButton" onclick="toggleFilter()">Ver pedidos cancelados</button>
             <input class="border border-gray-300 rounded px-4 py-2" placeholder="Buscar pedidos" type="text" id="searchInput" onkeyup="searchOrders()"/>
             <!-- Icono de Exportar -->
             <div class="bg-blue-500 text-white px-4 py-2 rounded flex items-center space-x-2">

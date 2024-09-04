@@ -1,21 +1,34 @@
-let showCancelled = false;
+/*Ver Pedidos*/
+let currentFilter = 'Todos';
 
-function toggleOrders() {
-    showCancelled = !showCancelled;
-    const rows = document.querySelectorAll('#ordersTable tbody tr');
-    rows.forEach(row => {
-        const state = row.querySelector('td:nth-child(3) span').textContent.trim();
-        if (showCancelled) {
-            if (state === 'Rechazado') {
-                row.style.display = '';
+        function toggleFilter() {
+            const rows = document.querySelectorAll('tbody tr');
+            const button = document.getElementById('filterButton');
+
+            if (currentFilter === 'Todos') {
+                currentFilter = 'Rechazado';
+                button.textContent = 'Ver pedidos entregados';
+            } else if (currentFilter === 'Rechazado') {
+                currentFilter = 'Entregado';
+                button.textContent = 'Ver todos los pedidos';
             } else {
-                row.style.display = 'none';
+                currentFilter = 'Todos';
+                button.textContent = 'Ver pedidos cancelados';
             }
-        } else {
-            row.style.display = '';
+
+            rows.forEach(row => {
+                const orderStatus = row.querySelector('td:nth-child(3) span').textContent.trim();
+                if (currentFilter === 'Todos') {
+                    row.classList.remove('hidden');
+                } else {
+                    if (orderStatus === currentFilter) {
+                        row.classList.remove('hidden');
+                    } else {
+                        row.classList.add('hidden');
+                    }
+                }
+            });
         }
-    });
-}
 
 function searchOrders() {
     const input = document.getElementById('searchInput');
