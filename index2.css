@@ -44,24 +44,7 @@
     border-color: #777777; /* Dark gray border for inputs */
 }
 
-/* Icon Styles */
-.dark-mode .group img {
-    filter: invert(1) brightness(0.8); /* Invert colors for icons in dark mode */
-}
-
-/* Light Mode Specific Styles */
-.bg-bluecielo {
-    background-color: #87CEEB; /* Light blue background */
-}
-
-.text-darkblue {
-    color: #00008B; /* Dark blue text */
-}
-
-.text-lightblue {
-    color: #87CEFA; /* Light blue text */
-}
-
-.group img {
-    filter: none; /* No filter for light mode */
+/* Icon Styles for all images */
+.dark-mode img {
+    filter: invert(1) brightness(0.8); /* Invert colors for all images in dark mode */
 }
