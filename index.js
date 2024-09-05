@@ -14,7 +14,6 @@ function toggleTheme() {
     }
 }
 
-//Exportar
 function toggleModal() {
   const modal = document.getElementById('exportModal');
   modal.classList.toggle('hidden');
@@ -25,6 +24,5 @@ document.getElementById('exportModal').classList.remove('hidden');
 
 // Ocultar el modal
 document.getElementById('exportModal').classList.add('hidden');
-
 
     
