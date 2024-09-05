@@ -17,9 +17,10 @@ function toggleTheme() {
 
 //Exportar
 function toggleModal() {
-  const modal = document.getElementById('exportModal');
-  modal.classList.toggle('hidden');
-}
+    const modal = document.getElementById('exportModal');
+    // Alternar la clase "hidden" para mostrar u ocultar el modal
+    modal.classList.toggle('hidden');
+  }
 
 // Mostrar el modal
 document.getElementById('exportModal').classList.remove('hidden');
