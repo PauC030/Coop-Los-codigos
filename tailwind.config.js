@@ -12,9 +12,9 @@ export default {
        "lightblue": "#0B8CE8",
        "blueclear": "#A1BACA",
        "bluecielo": "#DCE9F1",
-       "azulclaro": "##EBF7FF"
-        
-
+       "azulclaro": "#EBF7FF",
+      
+      
       }
     },
   },

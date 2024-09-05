@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear un Negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .selected-link{
+            color: #FFF !important;
+            background-color: #0077FF !important;
+        }
+    </style>
+  
+</head>
+<body class="bg-gray-100 text-gray-800">
+   <!-- Barra de navegación superior -->
+      <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+<div class="bg-white border-b border-gray-200 p-4 flex justify-between items-center  max-width: 100%;">
+    <!-- Contenedor de enlaces -->
+  <div class="flex space-x-14">
+      
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-7">Administrador
+          <div class="border-l border-gray-300 h-8 mx-6"></div>  <!--linea de separacion-->
+      </div>
+     
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-7 ">Instancia
+        <div class="border-l border-gray-300 h-8 mx-20"></div>  <!--linea de separacion--></div>
+  
+
+      
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-7 ">Novedades</div>    
+
+
+
+
+      
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-7">
+          <img src="../public/imagenes/pedidos.png" alt="Pedidos" class="h-5 w-5">Pedidos</div>
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-7">
+          <img src="../public/imagenes/entregas.png" alt="Entregas" class="h-5 w-5">Entregas</div>
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-2">
+          <img src="../public/imagenes/negocios.png" alt="Negocios" class="h-5 w-5">Negocios</div>
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-2">
+          <img src="../public/imagenes/Usuario.png" alt="Usuarios" class="h-5 w-5">Usuarios</div>
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-2">
+          <img src="../public/imagenes/configuraciones.png" alt="Configuraciones" class="h-5 w-5">Configuraciones</div>
+  
+      <div class="flex items-center text-gray-600 cursor-pointer space-x-2">
+          <img src="../public/imagenes/cuenta.png" alt="Cuenta" class="h-5 w-5">Cuenta</div>
+  
+         <!-- Elemento separado al final -->
+         <div class="bg-green-500 text-white py-1 px-3 rounded-full">99+</div>
+      </div>
+  </div>
+
+    <!-- Sub-barra de navegación y logo de PanascOOp -->
+    <div class="bg-white border-b border-gray-200 p-4 flex justify-between items-center">
+        <div class="text-gray-500"><span class="text-gray-700">Despacho / Negocios /</span> Crear un negocio</div>
+        <div class="brand">
+            <img src="../public/imagenes/LogocOOP.png" alt="Logo PanascOOp" class="h-14 w-auto">
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container mx-auto bg-white shadow-md p-6 mt-6">
+        <header class="mb-4">
+            <h1 class="text-2xl font-bold">Creando un negocio</h1>
+        </header>
+
+        
+
+        <!-- Alerta -->
+        <div class="bg-blue-300 text-white p-4 rounded-lg mb-4">
+            <h2 class="text-xl">No puedes activar este Negocio todavía.</h2>
+            <p>Introduce el nombre del negocio,<br> introduce el número de teléfono,<br> selecciona al menos un horario de apertura.</p>
+        </div>
+
+        <!-- Nota debajo de la alerta -->
+        <div class="text-gray-600 mb-6 flex items-start">
+            <img src="../public/imagenes/alert.png" alt="Icono de alerta" class="h-6 w-6 mr-2">
+            <p>Un Negocio desactivado no es visible ni referenciado en el sitio. No aparece en los resultados de búsqueda. Los visitantes no pueden acceder a su página dedicada.</p>
+        </div>
+
+        <!-- Contenido de la página -->
+        <div class="flex">
+            <!-- Barra lateral -->
+            <div class="w-1/4 border-r border-gray-200 pr-4">
+                <ul class="space-y-2 flex flex-col">
+                    <a href="#" class="p-2 bg-[#F7F7F7] text-black cursor-pointer rounded menu-button selected-link" id="generalLink">
+                        General
+                    </a>
+                    <a href="#" class="p-2 bg-[#F7F7F7] text-black cursor-pointer rounded menu-button" id="opcionesLink">
+                        Opciones
+                    </a>
+                    <a href="#" class="p-2 bg-[#F7F7F7] text-black cursor-pointer rounded menu-button" id="ejecucionLink">
+                        Ejecución
+                    </a>
+                    <a href="#" class="p-2 bg-[#F7F7F7] text-black cursor-pointer rounded menu-button">
+                        Términos
+                    </a>
+                </ul>
+            </div>
+            <div class="w-3/4 bg-white shadow-md rounded p-4 ml-4">
+                <div class="space-y-4">
+                   
+                 
+                   
+            <!-- Formulario General -->
+            <div id="general" class="w-3/4 pl-4">  
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="nombre" class="block font-semibold">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label for="categoria" class="block font-semibold">Categoría</label>
+                        <input type="text" id="categoria" name="categoria" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                    <div>
+                        <label for="direccion1" class="block font-semibold">Dirección</label>
+                        <input type="text" id="direccion1" name="direccion1" placeholder="Introduce tu dirección" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+
+                    <div class="text-sm text-gray-600"> 
+                        <input type="checkbox" id="direccion_diferente"  class="mr-2"  >
+                        Utilice una dirección comercial diferente
+                    </div>
+
+                    <div>
+                        <input type="text" id="direccion2" name="direccion2" placeholder="Introduce tu dirección" class="w-full p-2 border border-gray-300 rounded">
+                        <p class="text-sm text-gray-600">Esta dirección se utilizará en los recibos</p>
+                    </div>
+
+                    <div>
+                        <label for="descripcion" class="block font-semibold">Descripción</label>
+                        <input type="text" id="descripcion" name="descripcion" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div>
+                        <label for="nombre_legal" class="block font-semibold">Nombre legal</label>
+                        <input type="text" id="nombre_legal" name="nombre_legal" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+
+
+                    <div>
+                        <label for="telefono" class="block font-semibold">Número de teléfono</label>
+                        <input type="text" id="telefono" name="telefono" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+                       <!-- Guardar Button -->
+            <div class="mt-8">
+                <button class="bg-blue-500 text-white w-full px-4 py-2 rounded-lg">Guardar</button>
+            </div>
+                </form>
+            </div>
+
+
+
+
+
+
+            <!-- Formulario Opciones -->
+             
+            <div id="options" class="w-3/4 pl-4 hidden">
+                <h2 class="text-xl font-bold">Opciones del Negocio</h2>
+                <div class="flex items-start mt-4">
+                    <input type="checkbox" id="pagina_inicio" class="mr-2">
+                    <label for="pagina_inicio">Este negocio aparece en la página de inicio</label>
+                </div>
+                <div class="flex items-start mt-2">
+                    <input type="checkbox" id="negocio_exclusivo" class="mr-2">
+                    <label for="negocio_exclusivo">Este negocio es exclusivo</label>
+                </div>
+                <div class="mt-4">
+                    <label for="razones_fallo" class="block font-semibold">Razones del fracaso</label>
+                    <input id="razones_fallo" class="w-full p-2 border border-gray-300 rounded">
+                        
+                        <p class="text-sm text-gray-600">Seleccione una lista de motivos de falla que se utilizarán en el negocio.</p>
+                       
+                </input>
+                </div>
+                  <!-- Guardar Button -->
+            <div class="mt-8">
+                <button class="bg-blue-500 text-white w-full px-4 py-2 rounded-lg">Guardar</button>
+            </div>
+            </div>
+
+
+
+
+
+
+
+             <!-- Formulario Ejecución -->
+             <div id="ejecucion" class="w-3/7 pl-6 hidden">
+                
+
+<!-- Sección Entrega -->
+<div class="w-3/4 ml-4">
+    <div class="bg-white shadow-md rounded-lg p-4 mb-4">
+        <div class="flex justify-between items-center border-b pb-2 mb-2">
+            <span class="font-bold">Entrega</span>
+            
+            
+
+            
+        </div>
+        <div class="mb-4">
+            <span class="block font-bold mb-2">Plazos de entrega</span>
+
+            <div class="flex items-center mb-2">
+                <span class="mr-2">Lun.</span>
+                <span class="mr-2">Mar.</span>
+                <span class="mr-2">Mier.</span>
+                <span class="mr-2">Juev.</span>
+                <span class="mr-2">Vier.</span>
+                <span class="mr-2">Sab.</span>
+                <span class="mr-2">Dom.</span>
+            </div>
+            </div>
+            <div class="flex items-center mb-2">
+                <input type="radio" name="entrega" class="form-radio mr-2">
+                <span class="mr-4">Lo antes posible</span>
+                <input type="radio" name="entrega" class="form-radio mr-2">
+                <span>Franja horaria</span>
+                <button class="bg-green-500 text-white px-2 py-1 rounded ml-4">+ Añadir</button>
+            </div>
+            
+        
+        <div class="mb-4">
+            <span class="block font-bold mb-2">Importe mínimo de la cesta</span>
+            <div class="flex items-center">
+                <input type="text" class="border rounded p-2 w-1/2 mr-2" value="0,00">
+                <span>COP</span>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <input type="checkbox" class="form-checkbox mr-2">
+            <span>Permitir modificar</span>
+        </div>
+    </div>
+
+ <!-- Recogida en el negocio Section -->
+ <div class="bg-white p-4 shadow-md mb-4">
+    <div class="flex justify-between items-center mb-2">
+        <span class="font-bold">Recogida en el negocio</span>
+       
+    </div>
+    <div class="border p-4">
+        <div class="mb-2">
+            <span class="font-bold">Plazos de entrega</span>
+            <div class="flex space-x-2 mt-1">
+                <span>Lun.</span>
+                <span>Mar.</span>
+                <span>Mier.</span>
+                <span>Juev.</span>
+                <span>Vier.</span>
+                <span>Sab.</span>
+                <span>Dom.</span>
+            </div>
+        </div>
+        <div class="mb-2">
+            <input type="radio" name="recogida" class="mr-2">Lo antes posible
+            <input type="radio" name="recogida" class="ml-4 mr-2">Franja horaria
+        </div>
+        <div class="mb-2">
+            <label>Importe mínimo de la cesta</label>
+            <div class="flex items-center mt-1">
+                <input type="text" class="border p-1 w-1/4" value="0,00">
+                <span class="ml-2">COP</span>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" class="form-checkbox">Permitir modificar
+        </div>
+    </div>
+</div>
+<!-- Número de opciones de entrega Section -->
+<div class="bg-white p-4 shadow-md mb-4">
+    <label>Número de opciones de entrega (en días)</label>
+    <div class="flex items-center mt-1">
+        <input type="text" class="border p-1 w-1/4">
+        <i class="fas fa-chevron-down ml-2"></i>
+    </div>
+</div>
+
+              
+<!-- Gestionar los límites de los pedidos Section -->
+<div class="bg-white p-4 shadow-md mb-4">
+    <span class="font-bold">Gestionar los límites de los pedidos</span>
+    <div class="flex space-x-4 mt-2">
+        <input type="text" class="border p-1 w-1/4" placeholder="Orden(es)">
+        <input type="text" class="border p-1 w-1/4" placeholder="Minutos">
+    </div>
+    <div class="mt-2">
+        <span class="font-bold">Sin limitaciones para los pedidos</span>
+        <p class="text-sm mt-1">
+            La función de límite de pedidos le permite controlar la cantidad de pedidos que puede aceptar durante un período de tiempo determinado. Al establecer un límite, evitas recibir más pedidos de los que puedes manejar. Sólo necesita especificar el número máximo de pedidos y la duración del período de tiempo. Los pedidos adicionales se transfieren automáticamente al siguiente espacio. Esta función le ayuda a gestionar mejor su capacidad de producción y evitar retrasos y errores.
+        </p>
+    </div>
+</div>
+<!-- Alcance de entrega Section -->
+<div class="bg-white p-4 shadow-md">
+    <label>Alcance de entrega</label>
+    <div class="flex items-center mt-1">
+        <label>Distancia (km)</label>
+        <input type="text" class="border p-1 w-1/4 ml-2" value="3,00">
+    </div>
+     <!-- Guardar Button -->
+     <div class="mt-8">
+        <button class="bg-blue-500 text-white w-full px-4 py-2 rounded-lg">Guardar</button>
+    </div>
+   
+</div>
+</div>
+</div>
+<script src="negocio.js"></script>
+</body>
+</html>
+            
+
+
+               
+
+     
+
+
+
+
+
+   
