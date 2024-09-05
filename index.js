@@ -13,3 +13,16 @@ function toggleTheme() {
         themeIcon.classList.add('fa-moon');
     }
 }
+
+//Exportar
+function toggleModal() {
+      const modall = document.getElementById('exportModall');
+      modall.classList.toggle('hidden');
+    }
+    // Mostrar el modal
+    document.getElementById('exportModall').classList.remove('hidden');
+
+    // Ocultar el modal
+    document.getElementById('exportModall').classList.add('hidden');
+
+    

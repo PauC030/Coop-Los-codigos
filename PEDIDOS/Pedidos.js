@@ -44,9 +44,9 @@ function searchOrders() {
         }
     });
 }
-/*Pedidos*/
-   
 
+   
+// Exportar 
      function toggleModal() {
       const modal = document.getElementById('exportModal');
       modal.classList.toggle('hidden');
