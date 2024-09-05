@@ -5,9 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="public\imagenes\image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PanasCoop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   </head>
-  <body>
+  <body class=""> <!-- Default mode -->
     <div class="flex flex-col h-screen border-r-2">
               <header class="bg-blueclear p-4 flex flex-col sm:flex-row items-center justify-between shadow animate-fade-in">
                 <div class="flex items-center">
@@ -44,9 +46,13 @@
                  
          <!-- ADMINISTRACION -->
         <div class="flex items-center space-x-2 mt-2 sm:mt-1">
-          <button class="bg-dark-blue-600 text-black font-semibold px-4 py-2 rounded">Administración</button>
+          <button class="bg-dark-blue-600 text-darkblue font-semibold px-4 py-2 rounded">Administración</button>
           <img src="public/imagenes/Usuario.png" alt="Avatar" class="h-8 w-8 rounded-full ">
         </div>
+
+        <button id="theme-toggle" class="focus:outline-none" onclick="toggleTheme()">
+          <i id="theme-icon" class="fas fa-moon text-xl"></i>
+      </button>
     </header>
 
        <div class="p-4 flex flex-col sm:flex-row items-center justify-between bg-bluecielo ">  
@@ -174,7 +180,7 @@
       </div>
   </div> 
 
-
+  <script src="index.js"> </script>
   <script type="module" src="/main.js"></script>
   </body>
 </html>
