@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blueclear p-4  flex-col sm:flex-row items-center shadow animate-fade-in">
+        <div class="flex items-center">
+          <img src="imagenes/image.png" alt="Logo" class="h-8">
+         <nav class="ml-10 flex space-x-12">
+          <div class=" flex space-x-4">
+            <div class="group flex items-center text-darkblue hover: text-black font-semibold relatie group-hover:underline-slide">
+               <a href="#" class="text-darkblue hover: text-black font-semibold relatiegroup-hover:underline-slide">
+                Administrador
+            </div>
+            <div class="group flex items-center space-x-2  text-darkblue hover: text-black font-semibold relatiegroup-hover:underline-slide">
+                Instancia
+            </div>
+            
+            <div class="flex items-center space-x-3 text-darkblue hover: text-black font-semibold relatiegroup-hover:underline-slide">
+                Novedades
+            </div>
+          </div> 
+         <div class="flex items cross-size space-x-8">
+            <div class="group flex items-center space-x-1">
+              <img src="imagenes/pedidos.png" alt="Logo" class="h-6">
+              <a href="pedidos.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline">Pedidos</a>
+            </div>
+
+            <div class="group flex items-center space-x-1">
+              <img src="imagenes/entregas.png" alt="Logo" class="h-6">
+              <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline">Entregas</a>
+            </div>
+
+            <div class="group flex items-center space-x-1">
+              <img src="imagenes/negocios.png" alt="Logo" class="h-6">
+              <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline">Negocios</a>
+            </div>
+
+            <div class="group flex items-center space-x-1">
+              <img src="imagenes/Usuario.png" alt="Logo" class="h-6">
+              <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline">Usuarios</a>
+            </div>
+          
+            <div class="group flex items-center space-x-1">
+              <img src="imagenes/configuraciones.png" alt="Logo" class="h-6">
+              <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline">Configuraciones</a>
+            </div>
+            <div class="group flex items-center space-x-1 ">
+                <img src="imagenes\cuenta.png" alt="Logo" class="h-6 ">
+                <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline"> Cuenta </a>
+            </div>
+          </div>
+         </nav>
+        </div> 
+         
+</div>
+<br>
+
+
+    <header class="bg-white p-2 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+          <div class="text-gray-300 font-bold">Despacho/Negocios</div>
+          <input type="search" placeholder="Buscar Negocios" class="border rounded p-2 text-xm"/>
+       <button class="text-gray-600">Exportar</button>
+        </div>
+     
+  </header>
+<br>
+  <div class="flex justify-around  ">
+        <button class="flex items-center space-x-11 h-7 text-gray-500 border rounded-full p-2 "> <img src="anterior.png " alt="" class="items-center h-5 w-5">Anterior</button>
+          <button class="flex absolute top-18 right-2  items-center h-7 text-gray-500 border rounded-full p-2 "> <img src="siguiente.png" alt="" class="items-center h-5 w-5">Siguiente</button>
+                
+          <div class="flex justify-around ">
+              <button class="text-gray-600">Más opciones</button>
+              <button class=" bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Añadir</button>
+          </div>
+      </div>
+     
+
+    <main class="p-4">
+      <div class="bg-white shadow-md rounded overflow-hidden">
+          <table class="min-w-full bg-white">
+              <tbody>
+                  <tr class="border-t">
+                      <td class="py-4 px-6">
+                          <div class="text-sm font-medium">plaza bolivar</div>
+                          <div class="text-sm text-gray-500">Categorías</div>
+                      </td>
+                      <td class="py-4 px-6 text-sm">Cl. 8 Nte. #335, Popayán, Cauca</td>
+                      <td class="py-4 px-6 flex items-center justify-end space-x-4">
+                          <button class="text-gray-500">Perfil</button>
+                          <button class="text-red-500"> <img src= eliminar.png> </button>
+                      </td>
+                  </tr>
+                  <tr class="border-t">
+                      <td class="py-4 px-6">
+                          <div class="text-sm font-medium">El paraiso</div>
+                          <div class="text-sm text-gray-500">Frutas</div>
+                      </td>
+                      <td class="py-4 px-6 text-sm">Cl.9 Nte. #5N 60, Comuna 1, Popayán, Cauca</td>
+                      <td class="py-4 px-6 flex items-center justify-end space-x-4">
+                          <button class="text-gray-500">Perfil</button>
+                          <button class="text-red-500"><img src= eliminar.png> </button>
+                      </td>
+                  </tr>
+                  <tr class="border-t">
+                      <td class="py-4 px-6">
+                          <div class="text-sm font-medium">El palmar</div>
+                          <div class="text-sm text-gray-500">Queso</div>
+                      </td>
+                      <td class="py-4 px-6 text-sm">Bella vista, Cra. 9b #63 N 38, Popayán, Cauca</td>
+                      <td class="py-4 px-6 flex items-center justify-end space-x-4">
+                          <button class="text-gray-500">Perfil</button>
+                          <button class="text-red-500"> <img src= eliminar.png></button>
+                      </td>
+                  </tr>
+                  <tr class="border-t">
+                      <td class="py-4 px-6">
+                          <div class="text-sm font-medium">Las brisas</div>
+                          <div class="text-sm text-gray-500">Carnes</div>
+                      </td>
+                      <td class="py-4 px-6 text-sm">Cl. 75 #9-06, Popayán, Cauca</td>
+                      <td class="py-4 px-6 flex items-center justify-end space-x-4">
+                          <button class="text-gray-500">Perfil</button>
+                          <button class="text-red-500 "> <img src= eliminar.png></button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      
+</main>
+
+<!--PARTE DE MELISSA-->
+
+
+
+  
+</body>
+</html>
+
