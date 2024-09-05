@@ -16,13 +16,15 @@ function toggleTheme() {
 
 //Exportar
 function toggleModal() {
-      const modall = document.getElementById('exportModall');
-      modall.classList.toggle('hidden');
-    }
-    // Mostrar el modal
-    document.getElementById('exportModall').classList.remove('hidden');
+  const modal = document.getElementById('exportModal');
+  modal.classList.toggle('hidden');
+}
 
-    // Ocultar el modal
-    document.getElementById('exportModall').classList.add('hidden');
+// Mostrar el modal
+document.getElementById('exportModal').classList.remove('hidden');
+
+// Ocultar el modal
+document.getElementById('exportModal').classList.add('hidden');
+
 
     
