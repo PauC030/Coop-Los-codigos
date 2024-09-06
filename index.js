@@ -29,3 +29,7 @@ document.getElementById('exportModal').classList.remove('hidden');
 document.getElementById('exportModal').classList.add('hidden');
 
     
+function toggleImportModal() {
+     const modal = document.getElementById('importModal');
+     modal.classList.toggle('hidden');
+   }

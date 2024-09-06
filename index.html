@@ -75,7 +75,7 @@
             <!-- Icono de Importar-->
              <div class="group flex items-center font-semibold "> 
               <img src="public/imagenes/importar.png" alt="Logo" class="h-6">
-              <a href="#" class="text-darkblue hover:text-lightblue relative ">Importar</a>
+              <button class="text-darkblue hover:text-lightblue relative" onclick="toggleImportModal()">Importar</button>
              </div>
               </div>
               
@@ -209,6 +209,22 @@
     </div>
   </div>
 </div>
+
+<!-- Import Modal -->
+   <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center" id="importModal">
+    <div class="bg-white p-8 rounded shadow-lg text-center relative">
+     <button class="absolute top-2 right-2 text-gray-600" onclick="toggleImportModal()">
+      ×
+     </button>
+     <p class="text-lg font-semibold">
+      Deja los archivos aquí
+     </p>
+     <p class="text-gray-500">
+      Formatos de archivos admitidos: csv, ods, xlsx
+     </p>
+     <input class="mt-4" type="file" accept=".csv, .ods, .xlsx"/>
+    </div>
+   </div>
 
 
   <script src="index.js"> </script>
