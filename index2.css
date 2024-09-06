@@ -1,0 +1,50 @@
+/* General Dark Mode Styles */
+.dark-mode {
+    background-color: #1a202c;
+    color: #cbd5e0;
+}
+
+/* Header Styles */
+.dark-mode header {
+    background-color: #13142a; /* Dark background for the header */
+    color: #ffffff; /* White text color */
+}
+
+.dark-mode header a {
+    color: #ffffff; /* White text for links in the header */
+}
+
+.dark-mode header a:hover {
+    color: #cccccc; /* Light gray on hover */
+}
+
+/* Background Colors */
+.dark-mode .bg-white {
+    background-color: #2d3748; /* Darker background for white elements */
+}
+
+.dark-mode .bg-bluecielo {
+    background-color: #00001a; /* Very dark blue for the background */
+}
+
+/* Text Colors */
+.dark-mode .text-darkblue {
+    color: #9da2eb; /* Light blue for text */
+}
+
+.dark-mode .text-lightblue {
+    color: #cccccc; /* Light gray for text */
+}
+
+/* Input Styles */
+.dark-mode input[type="date"],
+.dark-mode input[type="text"] {
+    background-color: #1a1a33; /* Dark background for inputs */
+    color: #ffffff; /* White text for inputs */
+    border-color: #777777; /* Dark gray border for inputs */
+}
+
+/* Icon Styles for all images */
+.dark-mode img {
+    filter: invert(1) brightness(0.8); /* Invert colors for all images in dark mode */
+}
