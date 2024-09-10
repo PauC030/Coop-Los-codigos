@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negocios</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="negocio.js"></script>
     
 </head>
 <body class="bg-gray-100">
@@ -12,16 +13,18 @@
         <div class="flex items-center">
           <img src="imagenes/image.png" alt="Logo" class="h-8">
          <nav class="ml-10 flex space-x-12">
-          <div class=" flex space-x-4">
-            <div class="group flex items-center text-darkblue hover: text-black font-semibold relatie group-hover:underline-slide">
+        
+            
+            
+            <div class="flex items-center text-darkblue hover: text-black font-semibold relative group-hover:underline-slide">
                <a href="#" class="text-darkblue hover: text-black font-semibold relatiegroup-hover:underline-slide">
                 Administrador
             </div>
-            <div class="group flex items-center space-x-2  text-darkblue hover: text-black font-semibold relatiegroup-hover:underline-slide">
+            <div class="">
                 Instancia
             </div>
             
-            <div class="flex items-center space-x-3 text-darkblue hover: text-black font-semibold relatiegroup-hover:underline-slide">
+            <div class="flex items cross-size space-x-">
                 Novedades
             </div>
           </div> 
@@ -71,18 +74,33 @@
      
   </header>
 <br>
-  <div class="flex justify-around  ">
-        <button class="flex items-center space-x-11 h-7 text-gray-500 border rounded-full p-2 "> <img src="anterior.png " alt="" class="items-center h-5 w-5">Anterior</button>
-          <button class="flex absolute top-18 right-2  items-center h-7 text-gray-500 border rounded-full p-2 "> <img src="siguiente.png" alt="" class="items-center h-5 w-5">Siguiente</button>
-                
-          <div class="flex justify-around ">
-              <button class="text-gray-600">Más opciones</button>
-              <button class=" bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Añadir</button>
-          </div>
-      </div>
-     
-
-    <main class="p-4">
+  <div class="flex justify-around">
+    
+        <button class="flex items-center space-x-11 h-7 text-gray-500 border rounded-full p-2 "> <img src="imagenes\anterior.png" alt="Logo" class="items-center h-5 w-5">Anterior</button>
+          <button class="flex absolute top-18 right-2  items-center h-7 text-gray-500 border rounded-full p-2 "> <img src="imagenes/siguiente.png" alt="Logo" class="items-center h-5 w-5">Siguiente</button>
+          <div class="relative">
+            <button onclick="toggleDropdown()" class="text-gray-600 flex items-center space-x-2">
+                <span>Más opciones</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            
+            <!-- Menú Desplegable -->
+            <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg hidden">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Mercado</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Promociones</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sugerencias</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Permitir a los clientes</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sugerir restaurantes</a>
+            </div>
+        </div>          
+          
+            <button class=" bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Añadir</button>
+        </div>
+    </div>            
+    
+        <main class="p-4">
       <div class="bg-white shadow-md rounded overflow-hidden">
           <table class="min-w-full bg-white">
               <tbody>
@@ -94,7 +112,7 @@
                       <td class="py-4 px-6 text-sm">Cl. 8 Nte. #335, Popayán, Cauca</td>
                       <td class="py-4 px-6 flex items-center justify-end space-x-4">
                           <button class="text-gray-500">Perfil</button>
-                          <button class="text-red-500"> <img src= "eliminar.png"> </button>
+                          <button class="text-red-500"> <img src= "imagenes/eliminar.png"> </button>
                       </td>
                   </tr>
                   <tr class="border-t">
@@ -105,7 +123,7 @@
                       <td class="py-4 px-6 text-sm">Cl.9 Nte. #5N 60, Comuna 1, Popayán, Cauca</td>
                       <td class="py-4 px-6 flex items-center justify-end space-x-4">
                           <button class="text-gray-500">Perfil</button>
-                          <button class="text-red-500"><img src= "eliminar.png"> </button>
+                          <button class="text-red-500"><img src= "imagenes/eliminar.png"> </button>
                       </td>
                   </tr>
                   <tr class="border-t">
@@ -116,7 +134,7 @@
                       <td class="py-4 px-6 text-sm">Bella vista, Cra. 9b #63 N 38, Popayán, Cauca</td>
                       <td class="py-4 px-6 flex items-center justify-end space-x-4">
                           <button class="text-gray-500">Perfil</button>
-                          <button class="text-red-500"> <img src= "eliminar.png"></button>
+                          <button class="text-red-500"> <img src= "imagenes/eliminar.png"></button>
                       </td>
                   </tr>
                   <tr class="border-t">
@@ -124,10 +142,10 @@
                           <div class="text-sm font-medium">Las brisas</div>
                           <div class="text-sm text-gray-500">Carnes</div>
                       </td>
-                      <td class="py-4 px-6 text-sm">Cl. 75 #9-06, Popayán, Cauca</td>
+                      <td class="py-4 px-6 text-sm">Cl. 75 #9-06, Popayán, cauca</td>
                       <td class="py-4 px-6 flex items-center justify-end space-x-4">
                           <button class="text-gray-500">Perfil</button>
-                          <button class="text-red-500 "> <img src= "eliminar.png"></button>
+                          <button class="text-red-500 "> <img src= "imagenes/eliminar.png"></button>
                       </td>
                   </tr>
               </tbody>
@@ -136,7 +154,6 @@
 
       
 </main>
-
   
 </body>
 </html>
