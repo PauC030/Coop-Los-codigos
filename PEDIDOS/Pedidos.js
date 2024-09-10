@@ -44,13 +44,13 @@ function searchOrders() {
         }
     });
 }
-/*Pedidos*/
-   
 
+   
+// Exportar 
      function toggleModal() {
-      const modal = document.getElementById('exportModal');
-      modal.classList.toggle('hidden');
-    }
+  const modal = document.getElementById('exportModal');
+  modal.classList.toggle('hidden');
+}
     // Mostrar el modal
     document.getElementById('exportModal').classList.remove('hidden');
 

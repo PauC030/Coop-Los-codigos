@@ -8,14 +8,14 @@ export default {
   theme: {
     extend: {
       colors:{
-       "darkblue": "#005EA2",
-       "lightblue": "#0B8CE8",
-       "blueclear": "#A1BACA",
-       "bluecielo": "#DCE9F1",
-       "azulclaro": "##EBF7FF"
-        
-
-      }
+       'darkblue': "#005EA2",
+       'lightblue': "#0077FF",   /*color de los botones azul intenso */
+       'blueclear': "#A1BACA",
+       'bluecielo': "#DCE9F1",
+       'azulclaro': "#EBF7FF",
+    
+      
+      },
     },
   },
   plugins: [],

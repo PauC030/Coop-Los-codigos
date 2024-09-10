@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.tailwindcss.com">
+        </script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        
+       </head>
+       <body class="bg-gray-100" onload="updateDateTime()">
+        <div class="bg-white shadow-md p-4 order-1">
+         <div class="flex justify-between items-center">
+          <div class="flex items-center">
+           <img alt="Logo" class="mr-2" height="50" src="../public/imagenes/image.png" width="50"/>
+           <span class="text-lg font-semibold">
+            Panel de Administrador
+           </span>
+          </div>
+          <div class="flex space-x-4">
+
+            <img src="../public/imagenes/pedidos.png" alt="Logo" class="h-6">
+            <a class="text-gray-600 hover:text-gray-800" href="#">Pedidos</a>
+
+            <img src="../public/imagenes/entregas.png" alt="Logo" class="h-6">
+           <a class="text-gray-600 hover:text-gray-800" href="#">Entregas</a>
+
+           <img src="../public/imagenes/negocios.png" alt="Logo" class="h-6">
+           <a class="text-gray-600 hover:text-gray-800" href="#">Negocios</a>
+
+           <img src="../public/imagenes/Usuario.png" alt="Logo" class="h-6">
+           <a class="text-gray-600 hover:text-gray-800" href="#">Usuarios</a>
+
+           <img src="../public/imagenes/configuraciones.png" alt="Logo" class="h-6">
+           <a class="text-gray-600 hover:text-gray-800" href="#">Configuracion</a>
+
+           <img src="../public/imagenes/cuenta.png" alt="Logo" class="h-6">
+           <a class="text-gray-600 hover:text-gray-800" href="#">Cuenta</a>
+
+           <img src="../public/imagenes/ADMI.png" alt="Logo" class="h-6">
+           <a class="text-gray-600 hover:text-gray-800" href="#">Administrador</a>
+          </div>
+         </div>
+        </div>
+        <div class="bg-white shadow-md p-4 mt-2">
+         <div class="flex justify-between items-center">
+          <div class="flex items-center">
+           <span class="text-gray-600">
+            Fecha y hora:
+           </span>
+          </div>
+          <div class="flex items-center justify-center w-full">
+           <span id="current-date" class="text-gray-600">
+           </span>
+           <span class="ml-2 text-gray-600">
+            <span id="current-time"></span>
+           </span>
+           <i class="fas fa-bell ml-2 text-gray-600"></i>
+          </div>
+         </div>
+        </div>
+        <div class="container mx-auto mt-8">
+         <div class="flex">
+          <div class="w-1/3">
+           <div class="border p-4">
+            <img alt="Logo de empresa" class="w-full h-full object-cover" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-VQaWPB2D7yagLp7XAgKeNpFv.png?st=2024-09-04T20%3A56%3A20Z&amp;se=2024-09-04T22%3A56%3A20Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T21%3A22%3A11Z&amp;ske=2024-09-05T21%3A22%3A11Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=NfeytIXO/MDFGnuWI2rjb6qf0qMV4sfrEeVll5J%2BkqQ%3D" width="300"/>
+           </div>
+          </div>
+          <div class="w-2/3 pl-8">
+           <form oninput="updateFormData()">
+            <div class="mb-4">
+             <label class="block text-gray-700">
+              Nombre de empresa
+             </label>
+             <input id="company-name" class="w-full border p-2" type="text" placeholder="Digite el nombre de la empresa"/>
+            </div>
+            <div class="mb-4">
+             <label class="block text-gray-700">
+              Tipo de documento
+             </label>
+             <select id="document-type" class="w-full border p-2">
+              <option value="Cedula Ciudadania">
+               Cedula Ciudadania
+              </option>
+              <option value="Cedula Extranjeria">
+               Cedula Extranjeria
+              </option>
+              <option value="PEP">
+               PEP
+              </option>
+             </select>
+            </div>
+            <div class="mb-4">
+             <label class="block text-gray-700">
+              Numero de Documento
+             </label>
+             <input id="document-number" class="w-full border p-2" type="number" placeholder="Digite el numero de documento"/>
+            </div>
+            <div class="mb-4">
+             <label class="block text-gray-700">
+              Correo electronico
+             </label>
+             <input id="email" class="w-full border p-2" type="email" placeholder="ejemplo@correo.com"/>
+            </div>
+            <div class="mb-4">
+             <label class="block text-gray-700">
+              Telefono
+             </label>
+             <input id="phone" class="w-full border p-2" type="tel" placeholder="Digite numero de telefono"/>
+            </div>
+           </form>
+          </div>
+         </div>
+         <div class="mt-8">
+          <div class="bg-blue-100 p-4 flex items-center justify-between">
+           <span class="text-gray-700">
+            Sometido al IVA
+           </span>
+           <label class="inline-flex items-center">
+            <input type="checkbox" class="toggle-checkbox hidden" id="toggle-iva"/>
+            <label for="toggle-iva" class="toggle-label block w-10 h-6 rounded-full bg-gray-300 cursor-pointer relative">
+             <span class="toggle-span absolute left-0 top-0 w-6 h-6 bg-white rounded-full transition-transform duration-300 ease-in-out"></span>
+            </label>
+           </label>
+          </div>
+         </div>
+        </div>
+        <style>
+          .toggle-checkbox:checked + .toggle-label .toggle-span {
+            transform: translateX(100%);
+            background-color: #4CAF50;
+          }
+        </style>
+        <script src="configuracion.js"></script>
+       </body>
+      </html>
