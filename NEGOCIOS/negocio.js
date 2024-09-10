@@ -52,3 +52,10 @@ document.getElementById('terminosLink').addEventListener('click', function (e) {
     document.getElementById('terminos').classList.remove('hidden');
 });
 
+function volverPaginaAnterior() {
+    window.history.back();
+}
+
+function avanzarPaginaSiguiente() {
+    window.history.forward();
+}
