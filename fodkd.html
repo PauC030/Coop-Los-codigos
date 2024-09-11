@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear un Negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Barra de navegación superior -->
+    <div class="bg-white border-b border-gray-200 p-4 flex items-center">
+        <div class="mr-6 text-gray-600 cursor-pointer">Administrador</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Instancia</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Novedades</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Pedidos</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Entregas</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Negocios</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Usuarios</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Configuraciones</div>
+        <div class="mr-6 text-gray-600 cursor-pointer">Cuenta</div>
+        <div class="ml-auto bg-green-500 text-white py-1 px-3 rounded-full">99+</div>
+    </div>
+
+    <!-- Sub-barra de navegación y logo de PanascOOp -->
+    <div class="bg-white border-b border-gray-200 p-4 flex justify-between items-center">
+        <div class="text-gray-500"><span class="text-gray-700">Despacho / Negocios /</span> Crear un negocio</div>
+        <div class="brand">
+            <img src="../LogocOOP.png" alt="Logo PanascOOp" class="h-12 w-auto">
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container mx-auto bg-white shadow-md p-6 mt-6">
+        <header class="mb-4">
+            <h1 class="text-2xl font-bold">Creando un negocio</h1>
+        </header>
+
+        <!-- Alerta -->
+        <div class="bg-blue-300 text-white p-4 rounded-lg mb-4">
+            <h2 class="text-xl">No puedes activar este Negocio todavía.</h2>
+            <p>Introduce el nombre del negocio,<br> introduce el número de teléfono,<br> selecciona al menos un horario de apertura.</p>
+        </div>
+
+        <!-- Nota debajo de la alerta -->
+        <div class="text-gray-600 mb-6 flex items-start">
+            <img src="../alert.png" alt="Icono de alerta" class="h-6 w-6 mr-2">
+            <p>Un Negocio desactivado no es visible ni referenciado en el sitio. No aparece en los resultados de búsqueda. Los visitantes no pueden acceder a su página dedicada.</p>
+        </div>
+
+        <!-- Contenido de la página -->
+        <div class="flex">
+            <!-- Barra lateral -->
+            <div class="w-1/4 border-r border-gray-200 pr-4">
+                <ul class="space-y-2">
+                    <li class="p-2 bg-blue-500 text-white cursor-pointer rounded">General</li>
+                    <li class="p-2 text-blue-500 cursor-pointer rounded hover:bg-gray-100">Opciones</li>
+                    <li class="p-2 text-blue-500 cursor-pointer rounded hover:bg-gray-100">Ejecución</li>
+                    <li class="p-2 text-blue-500 cursor-pointer rounded hover:bg-gray-100">Términos</li>
+                </ul>
+            </div>
+
+            <!-- Formulario -->
+            <div class="w-3/4 pl-4">
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="nombre" class="block font-semibold">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div>
+                        <label for="categoria" class="block font-semibold">Categoría</label>
+                        <input type="text" id="categoria" name="categoria" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div>
+                        <label for="direccion1" class="block font-semibold">Dirección</label>
+                        <input type="text" id="direccion1" name="direccion1" placeholder="Introduce tu dirección" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div class="text-sm text-gray-600">
+                        <input type="checkbox" id="direccion_diferente" class="mr-2">
+                        Utilice una dirección comercial diferente
+                    </div>
+
+                    <div>
+                        <input type="text" id="direccion2" name="direccion2" placeholder="Introduce tu dirección" class="w-full p-2 border border-gray-300 rounded">
+                        <p class="text-sm text-gray-600">Esta dirección se utilizará en los recibos</p>
+                    </div>
+
+                    <div>
+                        <label for="descripcion" class="block font-semibold">Descripción</label>
+                        <input type="text" id="descripcion" name="descripcion" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div>
+                        <label for="nombre_legal" class="block font-semibold">Nombre legal</label>
+                        <input type="text" id="nombre_legal" name="nombre_legal" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div>
+                        <label for="telefono" class="block font-semibold">Número de teléfono</label>
+                        <input type="text" id="telefono" name="telefono" class="w-full p-2 border border-gray-300 rounded">
+                    </div>
+
+                    <div>
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
