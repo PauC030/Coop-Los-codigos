@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="public\imagenes\image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PanasCoop</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <!-- biblioteca de iconoss -->
+    <!-- biblioteca de iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body class=" "> <!-- Default mode -->
@@ -27,49 +27,26 @@
                          1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
                       </svg>
                       <a href="PEDIDOS\pedidos.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Pedidos</a>
-
                     </div>
 
-
-
-                    <!-- Pedidos -->
-                    <div class=""> 
-                      <div class="group flex items-center space-x-1 ">
-                        <img src="public/imagenes/pedidos.png" alt="Logo" class="h-6">
-                        <a href="pedidos.html" class="hidden md:block text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Pedidos</a>
-                      </div>
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/entregas.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
                     </div>
 
-
-                    <!-- Entregas -->
-                    <div class="">
-                      <div class="group flex items-center space-x-1 ">
-                        <img src="public/imagenes/entregas.png" alt="Logo" class="h-6">
-                        <a href="#" class="hidden md:block text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
-                      </div>
-                    </div>
-    
-                    <!-- Negocios  -->
-                    <div class="">
-                      <div class="group flex items-center space-x-1 ">
-                        <img src="public/imagenes/negocios.png" alt="Logo" class="h-6">
-                        <a href="#" class="hidden md:block text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Negocios</a>
-                      </div>
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/negocios.png" alt="Logo" class="h-6">
+                      <a href="NEGOCIOS\Negocios.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Negocios</a>
                     </div>
 
-                  <!-- Usuario -->
-                    <div class=" space-x-3">
-                      <div class="group flex items-center space-x-1  ">
-                        <img src="public/imagenes/Usuario.png" alt="Logo" class="h-6">
-                        <a href="#" class="hidden md:block text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Usuarios</a>
-                      </div>
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/Usuario.png" alt="Logo" class="h-6">
+                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Usuarios</a>
                     </div>
-                         <!-- Configuraciones -->
-                    <div class=" espace-x-3">
-                      <div class="group flex items-center space-x-1  ">
-                        <img src="public/imagenes/configuraciones.png "  alt="Logo" class="h-6 ">
-                        <a href="#" class="hidden md:block text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Configuraciones</a>
-                      </div>
+
+                    <div class="group flex items-center space-x-1">
+                      <img src="public/imagenes/configuraciones.png" alt="Logo" class="h-6">
+                      <a href="Configuración\configuracion.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Configuraciones</a>
                     </div>
             </nav>
         </div>
@@ -87,48 +64,56 @@
       </button>
     </header>
 
-      <div class="p-4 flex flex-col sm:flex-row items-center justify-between bg-bluecielo ">
-
-        <!-- Selector de Fecha -->
-        <div class="flex justify-start flex-between space-x-3">
-          <img src="/public/imagenes/calendar.png" alt="Avatar" class=" h-6  ">
-          <input type="date" class="border rounded p-2 hidden md:block ">
-        </div>
+       <div class="p-4 flex flex-col sm:flex-row items-center justify-between bg-bluecielo ">  
+                  <!-- Selector de Fecha -->
+                 <div class="flex justify-start flex-between">
+                   <input type="date" class="border rounded p-2 ">
+                 </div>
 
            
-        <div class="grid grid-cols-2 gap-1  space-x-5">
+            <div class="grid grid-cols-2 gap-1">
+            <!-- Icono de Exportar -->
+            <div class="group flex items-center font-semibold">
+            <img src="public/imagenes/exportar.png" alt="Logo" class="h-6">
+            <button class="text-darkblue hover:text-lightblue relative" onclick="toggleModal()">Exportar</button>
+            </div>
+            
+            
+            <!-- Icono de Importar-->
+             <div class="group flex items-center font-semibold "> 
+              <img src="public/imagenes/importar.png" alt="Logo" class="h-6">
+              <button class="text-darkblue hover:text-lightblue relative" onclick="toggleImportModal()">Importar</button>
+             </div>
+              </div>
+              
+              <!--BUSCADOR DE FECHA Toca organizar el diseño del input-->
+              <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2">
 
-        </div>
-        <!-- Icono de Exportar -->
-        <div class="group flex items-center font-semibold space-x-3">
-          <img src="public/imagenes/exportar.png" alt="Logo" class="h-7">
-          <a href="#" class="text-darkblue hover:text-lightblue relative hidden md:block ">Exportar</a>
-        </div>
-        <!-- Icono de Importar-->
-        <div class="group flex items-center font-semibold space-x-3 "> 
-          <img src="public/imagenes/importar.png" alt="Logo" class="h-8">
-          <a href="#" class="text-darkblue hover:text-lightblue relative hidden md:block">Importar</a>
-        </div>
-        <!--BUSCADOR DE FECHA Toca organizar el diseño del input-->
-        <input type="text" placeholder="Identificador, dirección..." class="border rounded p-2  hidden md:block  ">
-        <div class="  flex items-center font-semibold space-x-3" >
-          <img src="public\imagenes\filtro.png" alt="Logo" class="h-8" >
-          <a href="#" class="text-darkblue hover:text-lightblue hidden md:block">Filtros</a>
-        </div>
-        <!--Configuraqciones-->
-        <div class="flex items-center space-x-3 font-semibold" >
-          <img src="public\imagenes\configuraciones.png" alt="Logo" class="h-8" >
-          <a href="#" class="text-darkblue hover:text-lightblue hidden md:block">Configuración</a>
-        </div>
+//sas
+            <div class="flex items-center space-x-1 font-semibold">
+            <img src="public/imagenes/filtro.png" alt="Logo" class="h-6">
+           <a href="#" class="text-darkblue dark:text-lightblue hover:text-lightblue dark:hover:text-darkblue">Filtros</a>
+           </div>
 
-        <div class="flex items-center" >
-          <p id="parrafo" class="text-darkblue hover:text-lightblue text-4xl "> PanasCoop </p>
-        </div> 
+
+
+
+
+
+               <div class="flex items-center space-x-1 font-semibold" >
+                <img src="public\imagenes\configuraciones.png" alt="Logo" class="h-6" >
+                <a href="Configuración.html" class="text-darkblue hover:text-lightblue ">Configuración</a>
+              </div>
+
+              <div class="flex items-center" >
+                <p id="parrafo" class="text-darkblue hover:text-lightblue text-4xl "> PanasCoop </p>
+              </div> 
       </div>
   
           
          <!-- Contenido Principal1  -->
 
+<!--Comentario-->
 
               <div class="flex flex-1"> 
               <!-- lado Izquierdo -->
@@ -203,10 +188,8 @@
               </div>
             </main> 
 
-           <!-- <main class=" col-span-0">  no borrar-->}
-
+           <!-- <main class=" col-span-0">  no borrar-->
           
-          <div class=""></div>
 
       </div>
   </div> 
@@ -214,11 +197,7 @@
 <!-- Export Modal -->
 
 
-<<<<<<< HEAD
-<div id="exportModal" class="fixed inset-0 bg-gray-800 bg-opacity-50  items-center justify-center hidden ">
-=======
 <div id="exportModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
->>>>>>> 50eebf0dbf45a9150e1a7f063521695b63fdd1bd
   <div class="bg-white p-6 rounded shadow-md w-1/3">
     <div class="flex justify-between items-center mb-4">
       <h2 class="text-xl font-bold">Exportar</h2>
@@ -240,14 +219,10 @@
 </div>
 
 <!-- Import Modal -->
-<<<<<<< HEAD
-   <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50  items-center justify-center" id="importModal">
-=======
    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 items-center justify-center" id="importModal">
->>>>>>> 50eebf0dbf45a9150e1a7f063521695b63fdd1bd
     <div class="bg-white p-8 rounded shadow-lg text-center relative">
      <button class="absolute top-2 right-2 text-gray-600" onclick="toggleImportModal()">
-      
+      ×
      </button>
      <p class="text-lg font-semibold">
       Deja los archivos aquí
