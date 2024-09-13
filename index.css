@@ -74,11 +74,15 @@ button:hover {
 
 }
 
-img{
+svg{
     transition: transform 0.3s ease-in-out;
 }
 
-img:hover {
+svg:hover {
     transform: scale(1.10) rotate(6deg);
 
+}
+
+.svg-color {
+    fill: #000000; /* Cambia este valor por el color que desees */
 }
