@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#parrafo{
+    font-family:"brushF";
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+    /*from opacity 0: La animación comienza con el elemento completamente invisible.
+    to  opacity 1 : La animación termina con el elemento completamente visible.*/
+}
+
+.animate-fade-in {
+    animation: fade-in 4s ease-in-out;
+}
+
+
+@keyframes underline-slide {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+
+    /* from width: 0: La animación comienza con un ancho de 0, es decir el subrayado es invisible.
+     to width: 100%: La animación termina con el subrayado extendido a todo el ancho del elemento.*/
+}
+
+.group-hover\:underline-slide:hover::after {
+    content: ''; /* Crea un pseudoelemento ::after vacío, que se utilizará para el subrayado.*/
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #0066cc;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    animation: underline-slide 0.3s ease-in-out forwards; /* 
+    underline-slide: Especifica que se utilizará la animación underline-slide definida anteriormente.
+    forwards: Asegura que el subrayado permanezca visible después de que la animación haya terminado */
+}
+
+button {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    /*ease-in-out: Hace que la transicion comiense lenta, y despues acelere */
+    /*transform aplica una transformación 2D o 3D a un elemento. Esta propiedad le permite rotar, escalar, mover elementos */
+}
+
+button:hover {
+    transform: scale(1.05); /* el scale sirve para que al pasar el cursor sobre el boton, este se agrande un 5% y resalte */
+    background-color: #0066cc; /*  Cambia el color de fondo del botón a un tono más oscuro cuando se pasa el cursor sobre este */
+    /* Color más oscuro del botón */
+
+}
+
+svg{
+    transition: transform 0.3s ease-in-out;
+}
+
+svg:hover {
+    transform: scale(1.10) rotate(6deg);
+
+}
+
+.svg-color {
+    fill: #000000; /* Cambia este valor por el color que desees */
+}
