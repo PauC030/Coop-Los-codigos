@@ -3,7 +3,8 @@ export default {
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",
     "./index.html",
-    "./PEDIDOS/pedidos.html"
+    "./PEDIDOS/pedidos.html",
+    "./Configuración/configuracion.html"
     
   ], 
   
@@ -15,8 +16,8 @@ export default {
        'blueclear': "#A1BACA", 
        'bluecielo': "#DCE9F1", 
        'azulclaro': "#EBF7FF",
-       'BTverde': "#aeeca8", /*COLOR PARA los botones de entrega verde*/ 
-       'BTrojo': "#ff9e8e"
+       'BTverde': "#cff6c8", /*COLOR PARA los botones de entrega verde*/ 
+       'BTrojo': "#ffbeae"
       
       },
     },
