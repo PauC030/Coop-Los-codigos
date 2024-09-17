@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#parrafo{
-    font-family:"brushF";
-}
-
-
-
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -64,4 +58,12 @@ svg:hover {
 
 .svg-color {
     fill: #000000; /* Cambia este valor por el color que desees */
+}
+
+
+
+/* color de sometido al iva boton */
+.toggle-checkbox:checked + .toggle-label .toggle-span {
+    transform: translateX(100%);
+    background-color: darkblue;
 }
