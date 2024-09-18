@@ -33,6 +33,16 @@ function toggleImportModal() {
    }
 
 
+   function toggleFormas() {
+    var form = document.getElementById("taskFormas");
+    if (form.style.display === "none" || form.style.display === "") {
+      form.style.display = "block";
+    } else {
+      form.style.display = "none";
+    }
+}
+
+
    
 
 

@@ -40,7 +40,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
                         <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
                       </svg>
-                      <a href="#" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
+                      <a href="Entregas/Entregasmenu.html" class="text-darkblue hover:text-black font-semibold relative group-hover:underline-slide">Entregas</a>
                     </div>
 
                     <div class="group flex items-center space-x-1">
@@ -158,7 +158,7 @@
              </div>
 
             <div class="flex items-center space-x-1 font-semibold">
-              <button onclick="toggleForm()">
+            <button onclick="toggleForm()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                   <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                 </svg>
@@ -256,22 +256,24 @@
 </div>
 
 <!-- Import Modal -->
-   <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 items-center justify-center" id="importModal">
-    <div class="bg-white p-8 rounded shadow-lg text-center relative">
-     <button class="absolute top-2 right-2 text-gray-600" onclick="toggleImportModal()">
+<div class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden" id="importModal">
+  <div class="bg-white p-8 rounded shadow-lg text-center relative">
+    <button class="absolute top-2 right-2 text-gray-600" onclick="toggleImportModal()">
       ×
-     </button>
-     <p class="text-lg font-semibold">
+    </button>
+    <p class="text-lg font-semibold">
       Deja los archivos aquí
-     </p>
-     <p class="text-gray-500">
+    </p>
+    <p class="text-gray-500">
       Formatos de archivos admitidos: csv, ods, xlsx
-     </p>
-     <input class="mt-4" type="file" accept=".csv, .ods, .xlsx"/>
-    </div>
-   </div>
+    </p>
+    <input class="mt-4" type="file" accept=".csv, .ods, .xlsx"/>
+  </div>
+</div>
 
+   <!--Sin Asignar-->
 
+   
    
 
 
