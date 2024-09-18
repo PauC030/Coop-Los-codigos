@@ -42,8 +42,10 @@ function toggleImportModal() {
     }
 }
 
-
-   
+function Hamburguesa() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('hidden');
+}
 
 
 
