@@ -4,8 +4,8 @@ export default {
     "./src/**/*.{html,js,jsx,ts,tsx}",
     "./index.html",
     "./PEDIDOS/pedidos.html",
-    "./Configuración/configuracion.html"
-    
+    "./Configuración/configuracion.html",
+    "./ENTREGAS/Entregasmenu.html"
   ], 
   
   theme: {
