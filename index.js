@@ -94,3 +94,50 @@ function closeModal(modalId) {
   document.getElementById(modalId).classList.add('hidden');
 }
 
+function saveTask() {
+    // Obtener los valores de los campos
+    const titulo = document.getElementById('titulo').value;
+    const direccion = document.getElementById('direccion').value;
+    const nombre = document.getElementById('nombre').value;
+    const nombreContacto = document.getElementById('nombreContacto').value;
+    const telefono = document.getElementById('telefono').value;
+    const instrucciones = document.getElementById('instrucciones').value;
+    const taskDate = document.getElementById('taskDate').value;
+    const taskTime = document.getElementById('taskTime').value;
+    const taskEndDate = document.getElementById('taskEndDate').value;
+    const taskEndTime = document.getElementById('taskEndTime').value;
+    const taskDescription = document.getElementById('taskDescription').value;
+    const mensajero = document.getElementById('mensajero').value;
+
+    // Crear un nuevo elemento para la tarea
+    const taskItem = document.createElement('div');
+    taskItem.className = 'border p-2 rounded-md mb-2';
+    taskItem.innerHTML = `
+        <p class="font-bold">${titulo}</p>
+        <p>Dirección: ${direccion}</p>
+        <p>Nombre: ${nombre}</p>
+        <p>Nombre de Contacto: ${nombreContacto}</p>
+        <p>Teléfono: ${telefono}</p>
+        <p>Instrucciones: ${instrucciones}</p>
+        <p>Fecha: ${taskDate} ${taskTime} - ${taskEndDate} ${taskEndTime}</p>
+        <p>Comentarios: ${taskDescription}</p>
+        <p>Mensajero/a: ${mensajero}</p>
+        <button class="bg-red-500 text-white px-2 py-1 rounded mt-2" onclick="deleteTask(this)">Eliminar</button>
+    `;
+
+    // Agregar el nuevo elemento a la lista de tareas
+    document.getElementById('taskList').appendChild(taskItem);
+
+    // Cerrar el modal
+    closeModal('modalSinAsignar');
+}
+
+function deleteTask(button) {
+    // Eliminar el elemento de la tarea
+    const taskItem = button.parentElement;
+    taskItem.remove();
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+}
