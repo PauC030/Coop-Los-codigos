@@ -158,7 +158,7 @@
              </div>
 
             <div class="flex items-center space-x-1 font-semibold">
-              <button onclick="toggleForm()">
+            <button onclick="toggleForm()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                   <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                 </svg>
@@ -256,22 +256,24 @@
 </div>
 
 <!-- Import Modal -->
-   <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 items-center justify-center" id="importModal">
-    <div class="bg-white p-8 rounded shadow-lg text-center relative">
-     <button class="absolute top-2 right-2 text-gray-600" onclick="toggleImportModal()">
+<div class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center" id="importModal">
+  <div class="bg-white p-8 rounded shadow-lg text-center relative">
+    <button class="absolute top-2 right-2 text-gray-600" onclick="toggleImportModal()">
       ×
-     </button>
-     <p class="text-lg font-semibold">
+    </button>
+    <p class="text-lg font-semibold">
       Deja los archivos aquí
-     </p>
-     <p class="text-gray-500">
+    </p>
+    <p class="text-gray-500">
       Formatos de archivos admitidos: csv, ods, xlsx
-     </p>
-     <input class="mt-4" type="file" accept=".csv, .ods, .xlsx"/>
-    </div>
-   </div>
+    </p>
+    <input class="mt-4" type="file" accept=".csv, .ods, .xlsx"/>
+  </div>
+</div>
 
+   <!--Sin Asignar-->
 
+   
    
 
 
