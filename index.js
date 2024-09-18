@@ -33,17 +33,64 @@ function toggleImportModal() {
    }
 
 
-   function toggleFormas() {
-    var form = document.getElementById("taskFormas");
-    if (form.style.display === "none" || form.style.display === "") {
-      form.style.display = "block";
+   function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('hidden');
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+}
+
+function toggleButton(buttonId) {
+    const recogerButton = document.getElementById('recogerButton');
+    const entregarButton = document.getElementById('entregarButton');
+
+    if (buttonId === 'recogerButton') {
+        recogerButton.classList.add('bg-blue-500', 'text-white');
+        recogerButton.classList.remove('bg-gray-200', 'text-black');
+        entregarButton.classList.add('bg-gray-200', 'text-black');
+        entregarButton.classList.remove('bg-blue-500', 'text-white');
     } else {
-      form.style.display = "none";
+        entregarButton.classList.add('bg-blue-500', 'text-white');
+        entregarButton.classList.remove('bg-gray-200', 'text-black');
+        recogerButton.classList.add('bg-gray-200', 'text-black');
+        recogerButton.classList.remove('bg-blue-500', 'text-white');
     }
 }
 
+function toggleOptions() {
+    const options = document.getElementById('additionalOptions');
+    options.classList.toggle('hidden');
+}
 
-   
+function saveTask() {
+  const mensajero = document.getElementById('mensajero').value;
+  const taskDescription = document.getElementById('taskDescription').value;
+  const taskTime = document.getElementById('taskTime').value;
+  const taskDate = document.getElementById('taskDate').value;
+  const taskEndTime = document.getElementById('taskEndTime').value;
+  const taskEndDate = document.getElementById('taskEndDate').value;
 
+  const taskHtml = `
+      <div class="bg-blue-100 p-2 rounded">
+          <span class="block text-gray-700">${taskDescription}</span>
+          <span class="block text-gray-500">${taskDate} ${taskTime} - ${taskEndDate} ${taskEndTime}</span>
+      </div>
+  `;
 
+  if (mensajero === "Seleccionar mensajer@") {
+      document.getElementById('sinAsignarTasks').innerHTML += taskHtml;
+  } else {
+      document.getElementById('asignadasTasks').innerHTML += taskHtml;
+  }
+}
+
+//Modal +
+function openModal(modalId) {
+  document.getElementById(modalId).classList.remove('hidden');
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).classList.add('hidden');
+}
 
