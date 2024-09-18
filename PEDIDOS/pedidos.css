@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "varcity";
-    src: url(public\fonts\varsity_regular.ttf);
-    font-family: "diamant";
-    src: url(public\fonts\TwinkleDiamondDEMO.otf);
-    font-family: "brushF";
-    src: url(public\fonts\Brushfire.otf);
-
-}
-
 #parrafo{
     font-family:"brushF";
 }
@@ -61,18 +51,7 @@
     forwards: Asegura que el subrayado permanezca visible después de que la animación haya terminado */
 }
 
-button {
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    /*ease-in-out: Hace que la transicion comiense lenta, y despues acelere */
-    /*transform aplica una transformación 2D o 3D a un elemento. Esta propiedad le permite rotar, escalar, mover elementos */
-}
 
-button:hover {
-    transform: scale(1.05); /* el scale sirve para que al pasar el cursor sobre el boton, este se agrande un 5% y resalte */
-    background-color: #0066cc; /*  Cambia el color de fondo del botón a un tono más oscuro cuando se pasa el cursor sobre este */
-    /* Color más oscuro del botón */
-
-}
 
 svg{
     transition: transform 0.3s ease-in-out;
