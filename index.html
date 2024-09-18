@@ -209,11 +209,7 @@
              </div>
 
             <div class="flex items-center space-x-1 font-semibold">
-            <button onclick="toggleForm()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                </svg>
-              </button>
+              <button class="text-white" onclick="openModal('modalSinAsignar')"><i class="fas fa-plus"></i></button>
           </div>
 
            <div class="flex items-center space-x-1 font-semibold" >
@@ -243,7 +239,7 @@
           
             <!-- Footer with Icon and Profile -->
             <div class="p-3 flex items-center justify-between bg-blue-200">
-              <p class="font-bold">No asignado</p>
+              <p class="font-bold">Asignado</p>
               <div class="flex items-center space-x-1 font-semibold" >
                 <img src="public\imagenes\mas.png" alt="Logo" class="h-4" >
                 <a href="#" class="text-darkblue hover:text-lightblue "> </a>
@@ -322,10 +318,77 @@
   </div>
 </div>
 
-   <!--Sin Asignar-->
+<!-- Modal -->
+<div id="modalSinAsignar" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg shadow-lg p-8 w-3/4 relative">
+      <!-- Botón de Cierre -->
+      <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-800" onclick="closeModal('modalSinAsignar')">
+          <i class="fas fa-times fa-lg"></i>
+      </button>
+      <div class="flex space-x-4 mb-4">
+          <button id="recogerButton" class="bg-blue-500 text-white px-4 py-2 rounded" onclick="toggleButton('recogerButton')">RECOGER</button>
+          <button id="entregarButton" class="bg-gray-200 text-black px-4 py-2 rounded" onclick="toggleButton('entregarButton')">ENTREGAR</button>
+      </div>
+      <div class="space-y-4">
+          <div>
+              <label class="block text-gray-700">Dirección</label>
+              <input type="text" placeholder="Ingrese información y seleccione una dirección" class="w-full border border-gray-300 rounded p-2">
+          </div>
+          <div>
+              <button class="text-blue-500 flex items-center" onclick="toggleOptions()"><i class="fas fa-plus mr-2"></i> Más opciones</button>
+          </div>
+          <div id="additionalOptions" class="hidden space-y-4">
+              <div>
+                  <label class="block text-gray-700">Nombre</label>
+                  <input type="text" placeholder="Hogar u Oficina" class="w-full border border-gray-300 rounded p-2">
+              </div>
+              <div>
+                  <label class="block text-gray-700">Nombre de Contacto</label>
+                  <input type="text" placeholder="Nombre de Contacto" class="w-full border border-gray-300 rounded p-2">
+              </div>
+              <div>
+                  <label class="block text-gray-700">Teléfono</label>
+                  <input type="tel" placeholder="Teléfono" class="w-full border border-gray-300 rounded p-2">
+              </div>
+              <div>
+                  <label class="block text-gray-700">Instrucciones</label>
+                  <textarea placeholder="Instrucciones" class="w-full border border-gray-300 rounded p-2"></textarea>
+              </div>
+          </div>
+          <div>
+              <label class="block text-gray-700">Lapso de tiempo</label>
+              <div class="flex items-center space-x-2">
+                  <input type="date" id="taskDate" value="2024-08-15" class="border border-gray-300 rounded p-2">
+                  <input type="time" id="taskTime" value="07:00" class="border border-gray-300 rounded p-2">
+                  <i class="fas fa-arrow-right"></i>
+                  <input type="date" id="taskEndDate" value="2024-08-15" class="border border-gray-300 rounded p-2">
+                  <input type="time" id="taskEndTime" value="19:00" class="border border-gray-300 rounded p-2">
+                  <i class="fas fa-calendar-alt"></i>
+              </div>
+          </div>
+          <div>
+              <label class="block text-gray-700">Comentarios</label>
+              <textarea id="taskDescription" placeholder="Especifique cualquier información relevante para completar la tarea" class="w-full border border-gray-300 rounded p-2"></textarea>
+          </div>
+          <div>
+              <label class="block text-gray-700">Mensajero/a</label>
+              <select id="mensajero" class="w-full border border-gray-300 rounded p-2">
+                  <option>Seleccionar mensajer@</option>
+                  <option>Mensajero 1</option>
+                  <option>Mensajero 2</option>
+                  <option>Mensajero 3</option>
+              </select>
+          </div>
+          <div>
+            <button class="bg-white border border-gray-300 text-black px-4 py-2 rounded" onclick="saveTask()">Guardar</button>
+            <button class="bg-gray-300 text-black px-4 py-2 rounded ml-2" onclick="closeModal('modalSinAsignar')">Cancelar</button>
+        </div>
+      </div>
+  </div>
+</div>
 
-   
-   
+
+
 
 
   <script src="index.js"> </script>
