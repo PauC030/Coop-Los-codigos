@@ -58,15 +58,17 @@ function toggleButton(buttonId) {
     }
 }
 
-<<<<<<< HEAD
+//hamburguesa//
+
 function Hamburguesa() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('hidden');
 }
-=======
 function toggleOptions() {
     const options = document.getElementById('additionalOptions');
     options.classList.toggle('hidden');
+    
+    
 }
 
 function saveTask() {
@@ -76,7 +78,6 @@ function saveTask() {
   const taskDate = document.getElementById('taskDate').value;
   const taskEndTime = document.getElementById('taskEndTime').value;
   const taskEndDate = document.getElementById('taskEndDate').value;
->>>>>>> 44a94424f7d2fac9dba5f0910c6f754c9e38b561
 
   const taskHtml = `
       <div class="bg-blue-100 p-2 rounded">
@@ -101,3 +102,17 @@ function closeModal(modalId) {
   document.getElementById(modalId).classList.add('hidden');
 }
 
+
+
+/* 
+// Seleccionamos el botón que activa el menú desplegable
+const botonMenu = document.querySelector('.bg-green-500');
+
+// Seleccionamos el contenedor secundario que contiene las opciones del menú desplegable
+const opcionesMenu = botonMenu.nextElementSibling;
+
+// Agregamos un evento de clic al botón que activa el menú desplegable
+botonMenu.addEventListener('click', () => {
+  // Mostramos o ocultamos el contenedor secundario que contiene las opciones del menú desplegable
+  opcionesMenu.classList.toggle('hidden');
+}); no borrar */
