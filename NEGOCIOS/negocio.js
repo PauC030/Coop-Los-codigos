@@ -59,18 +59,10 @@ function volverPaginaAnterior() {
 function avanzarPaginaSiguiente() {
     window.history.forward();
 }
-<<<<<<< HEAD
 
-function toggleCommercialAddress() {
-    var checkBox = document.getElementById("direccion_comercial");
-    var commercialAddress = document.getElementById("commercial_address");
-    if (checkBox.checked == true){
-        commercialAddress.style.display = "block";
-    } else {
-        commercialAddress.style.display = "none";
-    }
-}
-=======
+
+
+
 function irAlMenu(){
     window.location.href = "index.html";
 }
@@ -96,5 +88,12 @@ function toggleActivated() {
 }
 
 
-
->>>>>>> 389cdbb175cdee677f686d2ebfd51035a38050cd
+function toggleCommercialAddress() {
+    var checkBox = document.getElementById("direccion_comercial");
+    var commercialAddress = document.getElementById("commercial_address");
+    if (checkBox.checked == true){
+        commercialAddress.style.display = "block";
+    } else {
+        commercialAddress.style.display = "none";
+    }
+}
