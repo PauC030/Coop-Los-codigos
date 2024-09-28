@@ -59,6 +59,7 @@ function volverPaginaAnterior() {
 function avanzarPaginaSiguiente() {
     window.history.forward();
 }
+<<<<<<< HEAD
 
 function toggleCommercialAddress() {
     var checkBox = document.getElementById("direccion_comercial");
@@ -69,3 +70,31 @@ function toggleCommercialAddress() {
         commercialAddress.style.display = "none";
     }
 }
+=======
+function irAlMenu(){
+    window.location.href = "index.html";
+}
+
+
+// Función para cambiar el estado de activado/desactivado
+function toggleActivated() {
+    const checkbox = document.getElementById('activateCheckbox');
+    const label = document.getElementById('activateLabel');
+    const icon = document.getElementById('icon');
+
+    if (checkbox.checked) {
+        label.classList.remove('text-gray-500');
+        label.classList.add('text-blue-500');
+        icon.classList.remove('text-gray-500');
+        icon.classList.add('text-blue-500');
+    } else {
+        label.classList.remove('text-blue-500');
+        abel.classList.add('text-gray-500');
+        icon.classList.remove('text-blue-500');
+        icon.classList.add('text-gray-500');
+    }
+}
+
+
+
+>>>>>>> 389cdbb175cdee677f686d2ebfd51035a38050cd

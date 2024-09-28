@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear un Negocio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+   
+
     <style>
         .selected-link {
             color: #FFF !important;
@@ -211,10 +213,26 @@
                             <div class="bg-white shadow-md rounded-lg p-4 mb-4">
                                 <div class="flex justify-between items-center border-b pb-2 mb-2">
                                     <span class="font-bold">Entrega</span>
+                                    <div class="">
+                                        <div class="flex items-center">
+                                            <input id="activateCheckbox" type="checkbox" class="hidden" onchange="toggleActivated()">
+                                            
+                                            <div id="icon" class="text-gray-500 mr-2 cursor-pointer" onclick="document.getElementById('activateCheckbox').click();">
+                                               <!-- Icono SVG del check--> 
+                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                                 </svg>
+            
+                                        
+                                            </div>
+                                
+                                            <label id="activateLabel" for="activateCheckbox" class="text-gray-500 cursor-pointer" onclick="document.getElementById('activateCheckbox').click();">
+                                                Activado
+                                            </label>
+                                        </div>
+                                    </div> 
                                     
-                                    
-                        
-                                    
+                                                                                            
                                 </div>
                                 <div class="mb-4">
                                     <span class="block font-bold mb-2">Plazos de entrega</span>
@@ -255,6 +273,27 @@
                          <div class="bg-white p-4 shadow-md mb-4">
                             <div class="flex justify-between items-center mb-2">
                                 <span class="font-bold">Recogida en el negocio</span>
+                                <div class="">
+                                    <div class="flex items-center">
+                                        <input id="activateCheckbox" type="checkbox" class="hidden" onchange="toggleActivated()">
+                                        
+                                        <div id="icon" class="text-gray-500 mr-2 cursor-pointer" onclick="document.getElementById('activateCheckbox').click();">
+                                           <!-- Icono SVG del check--> 
+                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                             </svg>
+        
+                                    
+                                        </div>
+                            
+                                        <label id="activateLabel" for="activateCheckbox" class="text-gray-500 cursor-pointer" onclick="document.getElementById('activateCheckbox').click();">
+                                            Activado
+                                        </label>
+                                    </div>
+                                </div> 
+                                
+                                                                                        
+                            </div>
                                
                             </div>
                             <div class="border p-4">
