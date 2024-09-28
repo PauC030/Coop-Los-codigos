@@ -59,3 +59,13 @@ function volverPaginaAnterior() {
 function avanzarPaginaSiguiente() {
     window.history.forward();
 }
+
+function toggleCommercialAddress() {
+    var checkBox = document.getElementById("direccion_comercial");
+    var commercialAddress = document.getElementById("commercial_address");
+    if (checkBox.checked == true){
+        commercialAddress.style.display = "block";
+    } else {
+        commercialAddress.style.display = "none";
+    }
+}
